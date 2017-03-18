@@ -6,7 +6,7 @@
     <br />
     Password:<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
     <br />
-    <br />
+    &nbsp;<br />
     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Log In" />
     <br />
     <br />
