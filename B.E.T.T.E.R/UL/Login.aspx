@@ -10,6 +10,7 @@
     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Log In" />
     <br />
     <br />
+    <br />
     <asp:PasswordRecovery ID="PasswordRecovery1" runat="server">
     </asp:PasswordRecovery>
 </asp:Content>
