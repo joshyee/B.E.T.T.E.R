@@ -111,6 +111,8 @@
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="UL\Login.aspx" />
+    <Content Include="UL\Register.aspx" />
+    <Content Include="UL\Welcome.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +135,20 @@
     </Compile>
     <Compile Include="UL\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
