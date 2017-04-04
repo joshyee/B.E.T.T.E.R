@@ -2,19 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>
-        Email:<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-    </p>
-    <p>
-        Parent Email:<asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-    </p>
-    <p>
-        New Password:<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-    </p>
-    <p>
-        Confirm Password:<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-    </p>
-    <p>
-        <asp:Button ID="Button1" runat="server" Text="Register" />
-    </p>
+    <div class="centered">
+        <asp:TextBox ID="email" runat="server" placeholder="Email"></asp:TextBox>
+        <asp:TextBox ID="parentemail" runat="server" placeholder="Parent Email"></asp:TextBox>
+        <asp:TextBox ID="newpassword" runat="server" placeholder="New Password" TextMode="Password"></asp:TextBox>
+        <asp:TextBox ID="confirmpassword" runat="server"  placeholder="Confirm Password" TextMode="Password"></asp:TextBox>
+        <asp:Button ID="register" runat="server" Text="Register" />
+    </div>
 </asp:Content>
