@@ -19,7 +19,6 @@
             <li><a href="Challenge.aspx">Challenge</a></li>
             <li><a href="UploadExercise.aspx">Upload Exercise</a></li>
             <li><a href="ManagePoints.aspx">Manage Points</a></li>
-            <li><a href="HallOfFame.aspx">Hall of Fame</a></li>
             <li><a href="Logout.aspx">Logout</a></li>
         </ul>
     </nav>
