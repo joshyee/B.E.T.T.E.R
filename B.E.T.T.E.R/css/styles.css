@@ -1,5 +1,7 @@
 ﻿body {
     background-image: url("../Resources/gold.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Play', sans-serif;
 }
 
@@ -11,6 +13,31 @@ nav li {
 a {
     color: #000;
     text-decoration: none;
+}
+
+/* Member Menu */
+nav#member-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav#member-menu ul {
+   
+}
+
+nav li {
+    display:inline !important;
+}
+
+nav a {
+    display: inline-block !important;
+    padding: 10px !important;
+}
+
+nav a:hover {
+    font-weight: bold;
 }
 
 section.left {

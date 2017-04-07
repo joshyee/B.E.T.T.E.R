@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BETTER.master.cs" Inherits="B.E.T.T.E.R.BETTER" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NonMember.Master.cs" Inherits="B.E.T.T.E.R.BETTER" %>
 
 <!DOCTYPE html>
 

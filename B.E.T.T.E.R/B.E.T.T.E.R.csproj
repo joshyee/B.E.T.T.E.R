@@ -99,7 +99,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="BETTER.Master" />
+    <Content Include="NonMember.Master" />
+    <Content Include="Member.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -114,17 +115,26 @@
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="UL\Login.aspx" />
+    <Content Include="UL\MainMenu.aspx" />
     <Content Include="UL\Register.aspx" />
+    <Content Include="UL\SelectCharacter.aspx" />
     <Content Include="UL\Welcome.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BETTER.Master.cs">
-      <DependentUpon>BETTER.Master</DependentUpon>
+    <Compile Include="Member.Master.cs">
+      <DependentUpon>Member.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BETTER.Master.designer.cs">
-      <DependentUpon>BETTER.Master</DependentUpon>
+    <Compile Include="Member.Master.designer.cs">
+      <DependentUpon>Member.Master</DependentUpon>
+    </Compile>
+    <Compile Include="NonMember.Master.cs">
+      <DependentUpon>NonMember.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NonMember.Master.designer.cs">
+      <DependentUpon>NonMember.Master</DependentUpon>
     </Compile>
     <Compile Include="BL\BLLogin.cs" />
     <Compile Include="DAL\DALLogin.cs" />
@@ -144,12 +154,26 @@
     <Compile Include="UL\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UL\MainMenu.aspx.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\MainMenu.aspx.designer.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UL\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UL\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\SelectCharacter.aspx.cs">
+      <DependentUpon>SelectCharacter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\SelectCharacter.aspx.designer.cs">
+      <DependentUpon>SelectCharacter.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\Welcome.aspx.cs">
       <DependentUpon>Welcome.aspx</DependentUpon>

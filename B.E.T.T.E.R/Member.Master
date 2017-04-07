@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Member.master.cs" Inherits="B.E.T.T.E.R.Member" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav id="member-menu">
+        <ul>
+            <li><a href="SelectCharacter.aspx">Select/Create Character</a></li>
+            <li><a href="ManagerCharacters.aspx">Manage Characters</a></li>
+            <li><a href="HallOfFame.aspx">Hall of Fame</a></li>
+            <li><a href="Challenge.aspx">Challenge</a></li>
+            <li><a href="UploadExercise.aspx">Upload Exercise</a></li>
+            <li><a href="ManagePoints.aspx">Manage Points</a></li>
+            <li><a href="HallOfFame.aspx">Hall of Fame</a></li>
+            <li><a href="Logout.aspx">Logout</a></li>
+        </ul>
+    </nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">           
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
