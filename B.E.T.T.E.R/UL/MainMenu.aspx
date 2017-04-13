@@ -9,8 +9,7 @@
             <li><strong>Ignis</strong></li>
             <li>Fire Titan</li>
             <li>Level 1</li>
-            <li>Win/Loss: 50%</li>
-            <li><strong><a href="SelectCharacter.aspx">View more</a></strong></li>
+            <li><strong><a href="ManageCharacters.aspx">View more</a></strong></li>
         </ul>
 
         <ul class="character-info">
@@ -18,8 +17,7 @@
             <li><strong>Aqueous</strong></li>
             <li>Water</li>
             <li>Level 2</li>
-            <li>Win/Loss: 30%</li>
-            <li><strong><a href="SelectCharacter.aspx">View more</a></strong></li>
+            <li><strong><a href="ManageCharacters.aspx">View more</a></strong></li>
         </ul>
     </div>
     <div class="my-points-balance">
