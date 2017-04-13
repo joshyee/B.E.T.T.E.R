@@ -5,16 +5,18 @@
     <div class="my-characters">
         <h1>My Characters</h1>
         <ul class="character-info">
+            <asp:Image class="character" ID="fire" runat="server" ImageUrl="~/Resources/fire.png" />
             <li><strong>Ignis</strong></li>
-            <li>Element: Fire</li>
+            <li>Fire Titan</li>
             <li>Level 1</li>
             <li>Win/Loss: 50%</li>
             <li><strong><a href="SelectCharacter.aspx">View more</a></strong></li>
         </ul>
 
         <ul class="character-info">
+            <asp:Image class="character" ID="water" runat="server" ImageUrl="~/Resources/water.png" />
             <li><strong>Aqueous</strong></li>
-            <li>Element: Water</li>
+            <li>Water</li>
             <li>Level 2</li>
             <li>Win/Loss: 30%</li>
             <li><strong><a href="SelectCharacter.aspx">View more</a></strong></li>

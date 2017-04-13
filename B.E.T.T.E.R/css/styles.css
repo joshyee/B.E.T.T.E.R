@@ -101,3 +101,7 @@ div.centered {
 input[class*="smallBtn"] {
     width: 200px;
 }
+
+img.character {
+    width: 250px;
+}

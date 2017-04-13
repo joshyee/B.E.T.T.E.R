@@ -113,6 +113,11 @@
     <None Include="Resources\dark-blue-wallpaper.jpg" />
     <None Include="Resources\gold.jpg" />
     <None Include="Resources\logo.png" />
+    <None Include="Resources\air.png" />
+    <None Include="Resources\earth.png" />
+    <None Include="Resources\vulcan.png" />
+    <None Include="Resources\water.png" />
+    <None Include="Resources\fire.png" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="UL\Login.aspx" />
