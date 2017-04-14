@@ -120,6 +120,11 @@
     <None Include="Resources\fire.png" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="UL\Challenge.aspx" />
+    <Content Include="UL\Fight.aspx" />
+    <Content Include="UL\FightOutcome.aspx" />
+    <Content Include="UL\FightSummary.aspx" />
+    <Content Include="UL\HallOfFame.aspx" />
     <Content Include="UL\Login.aspx" />
     <Content Include="UL\MainMenu.aspx" />
     <Content Include="UL\ManageCharacters.aspx" />
@@ -153,6 +158,41 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Challenge.aspx.cs">
+      <DependentUpon>Challenge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Challenge.aspx.designer.cs">
+      <DependentUpon>Challenge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Fight.aspx.cs">
+      <DependentUpon>Fight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Fight.aspx.designer.cs">
+      <DependentUpon>Fight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\FightOutcome.aspx.cs">
+      <DependentUpon>FightOutcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\FightOutcome.aspx.designer.cs">
+      <DependentUpon>FightOutcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\FightSummary.aspx.cs">
+      <DependentUpon>FightSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\FightSummary.aspx.designer.cs">
+      <DependentUpon>FightSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\HallOfFame.aspx.cs">
+      <DependentUpon>HallOfFame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\HallOfFame.aspx.designer.cs">
+      <DependentUpon>HallOfFame.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

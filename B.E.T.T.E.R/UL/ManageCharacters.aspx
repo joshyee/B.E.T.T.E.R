@@ -17,7 +17,8 @@
 
         <ul class="character-info">
             <asp:Image class="character" runat="server" ImageUrl="~/Resources/water.png" />
-            <li><strong>Water Titan</strong></li>
+            <li><strong>Mizu</strong></li>
+            <li>Water Titan</li>
             <li>Level 2</li>
             <li>Step 2</li>
             <li>1500 XP</li>
