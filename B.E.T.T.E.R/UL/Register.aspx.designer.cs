@@ -22,6 +22,15 @@ namespace B.E.T.T.E.R.UL {
         protected global::System.Web.UI.WebControls.TextBox email;
         
         /// <summary>
+        /// emailRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator emailRequired;
+        
+        /// <summary>
         /// parentemail control.
         /// </summary>
         /// <remarks>
@@ -49,12 +58,12 @@ namespace B.E.T.T.E.R.UL {
         protected global::System.Web.UI.WebControls.TextBox confirmpassword;
         
         /// <summary>
-        /// register control.
+        /// registerUser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button register;
+        protected global::System.Web.UI.WebControls.Button registerUser;
     }
 }

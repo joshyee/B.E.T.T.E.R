@@ -20,11 +20,12 @@
             <li><a href="Register.aspx">Register</a></li>
         </ul>
     </nav>
-    <div>
+    <div class="container">
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
     </div>
+    <br class="clear">
     </form>
 </body>
 </html>

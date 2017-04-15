@@ -7,6 +7,7 @@
 
 .container {
     padding: 0 135px;
+    margin: 0 160px;
 }
 
 #logo {
@@ -37,6 +38,7 @@ nav#menu {
     margin: 0;
     padding: 0;
     text-align: center;
+    border-bottom: 1px solid #000;
 }
 
 nav#menu ul {
@@ -60,13 +62,21 @@ ul.character-info li {
     padding: 10px;
 }
 
-section.left {
-    width: 50%;
+div.left {
+    width: 500px;
+    margin: 100px;
+    float: left;
+}
+
+div.right {
+    width: 500px;
+    margin: 100px;
+    float: left;
 }
 
 /* Welcome page */
-section#introduction {
-    font-size: 1.5em;
+div#introduction p {
+    font-size: 1.25em;
     line-height: 140%;
 }
 

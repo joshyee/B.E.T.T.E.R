@@ -118,6 +118,7 @@
     <None Include="Resources\vulcan.png" />
     <None Include="Resources\water.png" />
     <None Include="Resources\fire.png" />
+    <None Include="Resources\titans.png" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="UL\Challenge.aspx" />
