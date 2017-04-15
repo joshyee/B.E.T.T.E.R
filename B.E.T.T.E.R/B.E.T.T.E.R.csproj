@@ -126,10 +126,13 @@
     <Content Include="UL\FightSummary.aspx" />
     <Content Include="UL\HallOfFame.aspx" />
     <Content Include="UL\Login.aspx" />
+    <Content Include="UL\Logout.aspx" />
     <Content Include="UL\MainMenu.aspx" />
     <Content Include="UL\ManageCharacters.aspx" />
+    <Content Include="UL\ManagePoints.aspx" />
     <Content Include="UL\Register.aspx" />
     <Content Include="UL\SelectCharacter.aspx" />
+    <Content Include="UL\UploadExercise.aspx" />
     <Content Include="UL\Welcome.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -201,6 +204,13 @@
     <Compile Include="UL\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UL\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UL\MainMenu.aspx.cs">
       <DependentUpon>MainMenu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -215,6 +225,13 @@
     <Compile Include="UL\ManageCharacters.aspx.designer.cs">
       <DependentUpon>ManageCharacters.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UL\ManagePoints.aspx.cs">
+      <DependentUpon>ManagePoints.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\ManagePoints.aspx.designer.cs">
+      <DependentUpon>ManagePoints.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UL\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -228,6 +245,13 @@
     </Compile>
     <Compile Include="UL\SelectCharacter.aspx.designer.cs">
       <DependentUpon>SelectCharacter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\UploadExercise.aspx.cs">
+      <DependentUpon>UploadExercise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\UploadExercise.aspx.designer.cs">
+      <DependentUpon>UploadExercise.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\Welcome.aspx.cs">
       <DependentUpon>Welcome.aspx</DependentUpon>

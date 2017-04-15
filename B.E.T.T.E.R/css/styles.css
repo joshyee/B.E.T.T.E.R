@@ -31,15 +31,15 @@ a {
 
 /* /Text Hover Effect */
 
-/* Member Menu */
-nav#member-menu {
+/* Menu */
+nav#menu {
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-nav#member-menu ul {
+nav#menu ul {
     margin-top: -5px;
 }
 
@@ -104,4 +104,9 @@ input[class*="smallBtn"] {
 
 img.character {
     width: 250px;
+}
+
+/* Manage Points */
+input[class*="smallTxtbox"] {
+    width: 200px;!important
 }

@@ -12,7 +12,8 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <nav id="member-menu">
+    <form id="form1" runat="server">
+    <nav id="menu">
         <asp:Image ID="logo" runat="server" ImageUrl="~/Resources/logo.png" Width="100px" />
         <ul>
             <li><a href="SelectCharacter.aspx">Select/Create Character</a></li>
@@ -24,7 +25,6 @@
             <li><a href="Logout.aspx">Logout</a></li>
         </ul>
     </nav>
-    <form id="form1" runat="server">
         <div class="container">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">           
             </asp:ContentPlaceHolder>
