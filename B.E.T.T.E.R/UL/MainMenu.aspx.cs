@@ -11,7 +11,10 @@ namespace B.E.T.T.E.R.UL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string name = (string) Session["name"];
+            string username = (string) Session["username"];
+            lblFirstName.Text = "Welcome back, " + name.ToString();
+            lblUsername.Text = "Username: " + username.ToString();
         }
     }
 }

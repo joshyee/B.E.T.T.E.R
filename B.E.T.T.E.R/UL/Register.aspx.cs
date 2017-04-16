@@ -14,9 +14,15 @@ namespace B.E.T.T.E.R.UL
 
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btnRegister_Click(object sender, EventArgs e)
         {
-            Response.Write("Your registration is successful!");
+            if (IsValid) {
+
+                Session["name"] = Convert.ToString(txtFirstName.Text);
+                Session["username"] = Convert.ToString(txtEmail.Text);
+                Response.Redirect("MainMenu.aspx");
+
+            }
         }
     }
 }

@@ -4,6 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="my-characters">
         <h1>My Characters</h1>
+        <asp:Label ID="lblFirstName" runat="server" Text="Label"></asp:Label>
+        <asp:Label ID="lblUsername" runat="server" Text="Label"></asp:Label>
         <ul class="character-info">
             <asp:Image class="character" ID="fire" runat="server" ImageUrl="~/Resources/fire.png" />
             <li><strong>Ignis</strong></li>

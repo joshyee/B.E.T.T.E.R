@@ -8,6 +8,7 @@
 .container {
     padding: 0 135px;
     margin: 0 160px;
+    overflow: hidden;
 }
 
 #logo {
@@ -76,6 +77,28 @@ nav a:hover {
     line-height: 140%;
 }
 
+/* Register page */
+.auto-style1 {
+    margin-left: 26%;
+    margin-top: 20px;
+}
+
+div#ContentPlaceHolder1_ValidationSummary1 li {
+    list-style: disc;
+}
+
+.auto-style3 {
+    width: 85px !important;
+}
+
+.auto-style4 .validatorMessage {
+    margin-left: -300px;
+}
+
+.auto-style5  {
+    width: 300px !important;
+}
+
 /*Login page */
 input {
     font-size: 1.1em;
@@ -105,7 +128,12 @@ input[type=submit] {
     transform: translate(-50%, -50%);
 }
 
-/* Select/Create Character */
+/* Main Menu page */
+span#ContentPlaceHolder1_lblUsername {
+    float: right;
+}
+
+/* Select/Create Character page */
 input[class="smallBtn"] {
     width: 125px;
 }
@@ -114,7 +142,7 @@ input[class="smallBtn"] {
     width: 250px;
 }
 
-/* Manage Points */
+/* Manage Points page */
 input[class="smallTxtbox"] {
     width: 100px;
     padding: 10px;
