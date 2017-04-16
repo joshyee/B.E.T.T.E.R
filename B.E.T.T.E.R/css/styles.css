@@ -100,6 +100,11 @@ div#ContentPlaceHolder1_ValidationSummary1 li {
 }
 
 /*Login page */
+.auto-style2 {
+    margin-left: 33%;
+    margin-top: 20px;
+}
+
 input {
     font-size: 1.1em;
     display: block;

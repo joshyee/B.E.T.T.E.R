@@ -3,6 +3,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="centered">
-        <h3 style="text-align:center;">You have logged out.<br />Login or create a new account to get started. </h3>
+        <h3 style="text-align:center;">You have successfully logged out.</h3>
     </div>
 </asp:Content>
