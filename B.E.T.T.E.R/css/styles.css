@@ -80,7 +80,7 @@ nav a:hover {
 input {
     font-size: 1.1em;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     padding: 5px;
     width: 200px;
     border-radius: 3px;
@@ -118,4 +118,9 @@ input[class="smallBtn"] {
 input[class="smallTxtbox"] {
     width: 100px;
     padding: 10px;
+}
+
+/* Validator Message */
+.validatorMessage {
+    padding-bottom: 10px;
 }

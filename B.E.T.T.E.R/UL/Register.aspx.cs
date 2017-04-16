@@ -14,9 +14,9 @@ namespace B.E.T.T.E.R.UL
 
         }
 
-        protected void registerUser_Click(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
-            Label1.Text = email.Text + ", welcome to Visual Studio!";
+            Response.Write("Your registration is successful!");
         }
     }
 }
