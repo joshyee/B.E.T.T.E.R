@@ -28,12 +28,8 @@ a {
     text-decoration: none;
 }
 
-/* Text Hover Effect */
-
-/* /Text Hover Effect */
-
 /* Menu */
-nav#menu {
+#menu {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -41,41 +37,41 @@ nav#menu {
     border-bottom: 1px solid #000;
 }
 
-nav#menu ul {
+#menu ul {
     margin-top: -5px;
 }
 
 nav li {
-    display:inline !important;
+    display: inline;
 }
 
 nav a {
-    display: inline-block !important;
-    padding: 10px !important;
+    display: inline-block;
+    padding: 10px;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-ul.character-info li {
+.character-info li {
     padding: 10px;
 }
 
-div.left {
+.left {
     width: 500px;
     margin: 100px;
     float: left;
 }
 
-div.right {
+.right {
     width: 500px;
     margin: 100px;
     float: left;
 }
 
 /* Welcome page */
-div#introduction p {
+#introduction p {
     font-size: 1.25em;
     line-height: 140%;
 }
@@ -90,17 +86,19 @@ input {
     border-radius: 3px;
 }
 
-input, input[type=submit] {
-    width: 300px;
-    box-sizing: border-box;
+input {
+    width: 250px;
+    padding: 10px;
 }
 
+
 input[type=submit] {
+    width: 275px;
     background: linear-gradient(#484848, #000);
     color: #FFF;
 }
 
-div.centered {
+.centered {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -108,15 +106,16 @@ div.centered {
 }
 
 /* Select/Create Character */
-input[class*="smallBtn"] {
-    width: 200px;
+input[class="smallBtn"] {
+    width: 125px;
 }
 
-img.character {
+.character {
     width: 250px;
 }
 
 /* Manage Points */
-input[class*="smallTxtbox"] {
-    width: 200px;!important
+input[class="smallTxtbox"] {
+    width: 100px;
+    padding: 10px;
 }

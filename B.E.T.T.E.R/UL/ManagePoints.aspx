@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Manage XP</h1>
     <h3>Current Balance</h3>
-    <li>600 XP</li>
+    <p>600 XP</p>
     <ul class="character-info">
             <asp:Image class="character" runat="server" ImageUrl="~/Resources/fire.png" />
             <li><strong>Ignis</strong></li>
