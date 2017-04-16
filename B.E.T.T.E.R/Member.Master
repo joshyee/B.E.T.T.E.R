@@ -14,10 +14,10 @@
 <body>
     <form id="form1" runat="server">
     <nav id="menu">
-        <asp:Image ID="logo" runat="server" ImageUrl="~/Resources/logo.png" Width="100px" />
+        <a href="MainMenu.aspx"><asp:Image ID="logo" runat="server" ImageUrl="~/Resources/logo.png" Width="100px" /></a> 
         <ul>
             <li><a href="SelectCharacter.aspx">Select/Create Character</a></li>
-            <li><a href="ManagerCharacters.aspx">Manage Characters</a></li>
+            <li><a href="ManageCharacters.aspx">Manage Characters</a></li>
             <li><a href="HallOfFame.aspx">Hall of Fame</a></li>
             <li><a href="Challenge.aspx">Challenge</a></li>
             <li><a href="UploadExercise.aspx">Upload Exercise</a></li>

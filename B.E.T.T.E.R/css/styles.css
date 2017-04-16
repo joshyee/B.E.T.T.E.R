@@ -56,6 +56,8 @@ nav a:hover {
 }
 
 .character-info li {
+    width: 220px;
+    text-align: center;
     padding: 10px;
 }
 
@@ -136,6 +138,13 @@ input[type=submit] {
 /* Main Menu page */
 span#ContentPlaceHolder1_lblUsername {
     float: right;
+}
+
+.my-points-balance {
+    float: right;
+    margin-top: 75px;
+    margin-right: -290px;
+    text-align: center;
 }
 
 /* Select/Create Character page */

@@ -6,6 +6,11 @@
         <h1>My Characters</h1>
         <asp:Label ID="lblFirstName" runat="server" Text="Label"></asp:Label>
         <asp:Label ID="lblUsername" runat="server" Text="Label"></asp:Label>
+        <div class="my-points-balance">
+            <h1>My Points Balance</h1>
+            <h2>600</h2>
+            <li><strong><a href="ManagePoints.aspx">Manage Points</a></strong></li>
+        </div>
         <ul class="character-info">
             <asp:Image class="character" ID="fire" runat="server" ImageUrl="~/Resources/fire.png" />
             <li><strong>Ignis</strong></li>
@@ -22,9 +27,5 @@
             <li><strong><a href="ManageCharacters.aspx">View more</a></strong></li>
         </ul>
     </div>
-    <div class="my-points-balance">
-        <h1>My Points Balance</h1>
-        <h2>350</h2>
-        <li><strong><a href="ManagePoints.aspx">Manage Points</a></strong></li>
-    </div>
+    
 </asp:Content>
