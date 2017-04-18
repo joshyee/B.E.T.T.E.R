@@ -22,13 +22,13 @@ namespace B.E.T.T.E.R.UL {
         protected global::System.Web.UI.WebControls.Image fire;
         
         /// <summary>
-        /// createCharacter control.
+        /// fireTitan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button createCharacter;
+        protected global::System.Web.UI.WebControls.Button fireTitan;
         
         /// <summary>
         /// air control.
@@ -40,13 +40,13 @@ namespace B.E.T.T.E.R.UL {
         protected global::System.Web.UI.WebControls.Image air;
         
         /// <summary>
-        /// Button1 control.
+        /// airTitan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button airTitan;
         
         /// <summary>
         /// earth control.
@@ -58,13 +58,13 @@ namespace B.E.T.T.E.R.UL {
         protected global::System.Web.UI.WebControls.Image earth;
         
         /// <summary>
-        /// Button2 control.
+        /// earthTitan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button earthTitan;
         
         /// <summary>
         /// water control.
@@ -76,12 +76,12 @@ namespace B.E.T.T.E.R.UL {
         protected global::System.Web.UI.WebControls.Image water;
         
         /// <summary>
-        /// Button3 control.
+        /// waterTitan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button3;
+        protected global::System.Web.UI.WebControls.Button waterTitan;
     }
 }
