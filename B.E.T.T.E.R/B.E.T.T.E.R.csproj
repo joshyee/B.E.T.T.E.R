@@ -142,7 +142,7 @@
     <Content Include="UL\ManageCharacters.aspx" />
     <Content Include="UL\ManagePoints.aspx" />
     <Content Include="UL\Register.aspx" />
-    <Content Include="UL\SelectCharacter.aspx" />
+    <Content Include="UL\CreateCharacter.aspx" />
     <Content Include="UL\UploadExercise.aspx" />
     <Content Include="UL\Welcome.aspx" />
     <Content Include="Web.config" />
@@ -250,12 +250,12 @@
     <Compile Include="UL\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UL\SelectCharacter.aspx.cs">
-      <DependentUpon>SelectCharacter.aspx</DependentUpon>
+    <Compile Include="UL\CreateCharacter.aspx.cs">
+      <DependentUpon>CreateCharacter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UL\SelectCharacter.aspx.designer.cs">
-      <DependentUpon>SelectCharacter.aspx</DependentUpon>
+    <Compile Include="UL\CreateCharacter.aspx.designer.cs">
+      <DependentUpon>CreateCharacter.aspx</DependentUpon>
     </Compile>
     <Compile Include="UL\UploadExercise.aspx.cs">
       <DependentUpon>UploadExercise.aspx</DependentUpon>

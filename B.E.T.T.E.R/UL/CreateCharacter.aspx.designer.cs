@@ -10,7 +10,7 @@
 namespace B.E.T.T.E.R.UL {
     
     
-    public partial class SelectCharacter {
+    public partial class CreateCharacter {
         
         /// <summary>
         /// fire control.

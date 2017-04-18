@@ -16,7 +16,7 @@
     <nav id="menu">
         <a href="MainMenu.aspx"><asp:Image ID="logo" runat="server" ImageUrl="~/Resources/logo.png" Width="100px" /></a> 
         <ul>
-            <li><a href="SelectCharacter.aspx">Select/Create Character</a></li>
+            <li><a href="CreateCharacter.aspx">Create Character</a></li>
             <li><a href="ManageCharacters.aspx">Manage Characters</a></li>
             <li><a href="HallOfFame.aspx">Hall of Fame</a></li>
             <li><a href="Challenge.aspx">Challenge</a></li>

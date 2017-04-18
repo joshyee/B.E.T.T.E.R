@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Select Character - B.E.T.T.E.R" Language="C#" MasterPageFile="~/Member.Master" AutoEventWireup="true" CodeBehind="SelectCharacter.aspx.cs" Inherits="B.E.T.T.E.R.UL.SelectCharacter" %>
+﻿<%@ Page Title="Create Character - B.E.T.T.E.R" Language="C#" MasterPageFile="~/Member.Master" AutoEventWireup="true" CodeBehind="CreateCharacter.aspx.cs" Inherits="B.E.T.T.E.R.UL.CreateCharacter" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
