@@ -38,9 +38,9 @@ a {
     border-bottom: 1px solid #000;
 }
 
-#menu ul {
-    margin-top: -5px;
-}
+    #menu ul {
+        margin-top: -5px;
+    }
 
 nav li {
     display: inline;
@@ -51,8 +51,13 @@ nav a {
     padding: 10px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+.character-info {
+    height: 540px;
+    padding: 20px;
 }
 
 .character-info li {
@@ -97,7 +102,7 @@ div#ContentPlaceHolder1_ValidationSummary1 li {
     margin-left: -300px;
 }
 
-.auto-style5  {
+.auto-style5 {
     width: 300px !important;
 }
 
@@ -148,8 +153,9 @@ span#ContentPlaceHolder1_lblUsername {
 }
 
 /* Select/Create Character page */
-input[class="smallBtn"] {
-    width: 125px;
+.createCharacter {
+    display: block;
+    margin: 0 auto;
 }
 
 .character {
@@ -165,4 +171,57 @@ input[class="smallTxtbox"] {
 /* Validator Message */
 .validatorMessage {
     padding-bottom: 10px;
+}
+
+/* Challenge Character */
+input[class="smallBtn"] {
+    width: 125px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Upload Exercise */
+td.auto-style7 {
+    width: 173px;
+}
+
+/* Manage Points */
+input[class="txtXP"] {
+    width: 125px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Four Column Layout */
+.col-group > div {
+    padding: 1em;
+}
+
+@media screen and (min-width: 64em) {
+    h1 {
+        text-align: center;
+    }
+
+    .col-group {
+        overflow: hidden;
+    }
+
+        .col-group > div {
+            float: left;
+            width: 50%;
+        }
+
+            .col-group > div:nth-child(odd) {
+                clear: left;
+            }
+}
+
+@media screen and (min-width: 64em) {
+    .col-group > div {
+        width: 22%;
+    }
+
+        .col-group > div:nth-child(odd) {
+            clear: none;
+        }
 }
