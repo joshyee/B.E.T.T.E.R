@@ -56,11 +56,22 @@ nav a {
     }
 
 .character-info {
-    height: 540px;
+    height: 560px;
     padding: 20px;
 }
 
 .character-info li {
+    width: 220px;
+    text-align: center;
+    padding: 10px;
+}
+
+.fight-info {
+    height: 380px;
+    padding: 20px;
+}
+
+.fight-info li {
     width: 220px;
     text-align: center;
     padding: 10px;
@@ -218,7 +229,8 @@ input[class="txtXP"] {
 
 @media screen and (min-width: 64em) {
     .col-group > div {
-        width: 22%;
+        width: 18%;
+        padding: 0 55px;
     }
 
         .col-group > div:nth-child(odd) {

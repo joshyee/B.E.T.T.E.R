@@ -6,9 +6,35 @@
         <asp:Label ID="lblFirstName" runat="server" Text="Label"></asp:Label>
         <asp:Label ID="lblUsername" runat="server" Text="Label"></asp:Label>
         <div class="my-points-balance">
-            <h1>My Points Balance</h1>
-            <h2>600</h2>
+            <h2>My Points Balance</h2>
+            <h3>600</h3>
             <h4><a href="ManagePoints.aspx">Manage Points</a></h4>
+            <br />
+            <h2>Recent Fights</h2>
+            <ul class="fight-info">
+                <li><strong>Player</strong></li>
+                <li>Tommy</li>
+                <li><strong>Character</strong></li>
+                <li>Typhoon</li>
+                <li>Water Titan</li>
+                <li>Level 1</li>
+                <li>Step 3</li>
+                <li>350 XP</li>
+                <li><strong>Result</strong></li>
+                <li>Won</li>
+            </ul>
+            <ul class="fight-info">
+                <li><strong>Player</strong></li>
+                <li>Jessi91</li>
+                <li><strong>Character</strong></li>
+                <li>Wings</li>
+                <li>Air Titan</li>
+                <li>Level 1</li>
+                <li>Step 2</li>
+                <li>270 XP</li>
+                <li><strong>Result</strong></li>
+                <li>Won</li>
+            </ul>
         </div>
         <div class="col-group">
             <div>
