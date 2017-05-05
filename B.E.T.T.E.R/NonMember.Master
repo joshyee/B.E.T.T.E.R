@@ -14,7 +14,7 @@
 <body>
     <form id="form1" runat="server">
     <nav id="menu">
-        <asp:Image ID="logo" runat="server" ImageUrl="~/Resources/logo.png" Width="100px" />
+        <a href="Welcome.aspx"><asp:Image ID="logo" runat="server" ImageUrl="~/Resources/logo.png" Width="100px" /></a>
         <ul>
             <li><a href="Login.aspx">Login</a></li>
             <li><a href="Register.aspx">Register</a></li>
