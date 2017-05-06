@@ -13,5 +13,12 @@ namespace B.E.T.T.E.R.UL
         {
 
         }
+
+        protected void fireTitan_Click(object sender, EventArgs e)
+        {
+            string titan = "Fire Titan";
+            int level = 1;
+            
+        }
     }
 }

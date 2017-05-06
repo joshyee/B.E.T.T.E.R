@@ -14,7 +14,7 @@
                 <li><strong>Strength and Weakness</strong></li>
                 <li>Stronger than Air, but weaker than Water</li><br />
             </ul>
-            <asp:Button ID="fireTitan" class="createCharacter" runat="server" Text="Create Character" /> 
+            <asp:Button ID="fireTitan" class="createCharacter" runat="server" Text="Create Character" OnClick="fireTitan_Click" /> 
         </div>
         <div>
             <ul class="character-info">

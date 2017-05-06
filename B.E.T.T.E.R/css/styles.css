@@ -56,7 +56,7 @@ nav a {
     }
 
 .character-info {
-    height: 560px;
+    height: 540px;
     padding: 20px;
 }
 
@@ -78,19 +78,19 @@ nav a {
 }
 
 #fight {
-    margin-left: 235px;
+    margin-left: 175px;
 }
 
 #summary {
-    margin-left: 235px;
+    margin-left: 165px;
 }
 
 #versus {
     font-size: 7em;
     margin-top: 160px;
     text-align: right;
+    padding-left: 75px;
 }
-
 
 .left {
     width: 33.3%;
@@ -210,6 +210,7 @@ input[class="smallBtn"] {
     width: 125px;
     display: block;
     margin: 0 auto;
+    margin-left: 75px;
 }
 
 /* Upload Exercise */
@@ -250,7 +251,7 @@ input[class="txtXP"] {
 
 @media screen and (min-width: 64em) {
     .col-group > div {
-        width: 17%;
+        width: 16%;
         padding: 0 55px;
     }
 

@@ -50,7 +50,7 @@
                 <ul class="character-info">
                     <asp:Image class="character" ID="water" runat="server" ImageUrl="~/Resources/water.png" />
                     <li><strong>Aqueous</strong></li>
-                    <li>Water</li>
+                    <li>Water Titan</li>
                     <li>Level 2</li>
                     <li><strong><a href="ManageCharacters.aspx">View more</a></strong></li>
                 </ul>
