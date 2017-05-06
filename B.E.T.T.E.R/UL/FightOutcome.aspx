@@ -23,7 +23,7 @@
         <div>
             <h1 id="versus">VS.</h1>
         </div>
-        <div>
+        <div id="opponent">
             <ul class="character-info" style="height:650px;">
                 <li><strong>Player</strong></li>
                 <li>Tommy</li>

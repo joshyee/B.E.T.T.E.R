@@ -81,9 +81,17 @@ nav a {
     margin-left: 285px;
 }
 
+#summary {
+    margin-left: 235px;
+}
+
 #versus {
     font-size: 7em;
     margin-top: 160px;
+}
+
+#opponent {
+    margin-left: -75px;
 }
 
 .left {
@@ -112,7 +120,7 @@ nav a {
 
 /* Register page */
 .auto-style1 {
-    margin-left: 26%;
+    margin-left: 36%;
     margin-top: 20px;
 }
 
@@ -134,7 +142,7 @@ div#ContentPlaceHolder1_ValidationSummary1 li {
 
 /*Login page */
 .auto-style2 {
-    margin-left: 33%;
+    margin-left: 38%;
     margin-top: 20px;
 }
 
