@@ -21,7 +21,7 @@
             </ul>
         </div>
         <div>
-            <h1 id="versus">VS.</h1>
+            <h1 id="versus">vs.</h1>
         </div>
         <div id="opponent">
             <ul class="character-info" style="height:650px;">

@@ -78,7 +78,7 @@ nav a {
 }
 
 #fight {
-    margin-left: 285px;
+    margin-left: 235px;
 }
 
 #summary {
@@ -88,11 +88,9 @@ nav a {
 #versus {
     font-size: 7em;
     margin-top: 160px;
+    text-align: right;
 }
 
-#opponent {
-    margin-left: -75px;
-}
 
 .left {
     width: 33.3%;
