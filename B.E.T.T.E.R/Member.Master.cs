@@ -11,7 +11,12 @@ namespace B.E.T.T.E.R
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            /* Redirect Non-members to the Welcome page */
+            if (Session["username"] == null)
+            {
+                Response.Redirect("Welcome.aspx");
+            }
+            
         }
     }
 }

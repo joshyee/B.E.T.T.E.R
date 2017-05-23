@@ -15,12 +15,16 @@ namespace B.E.T.T.E.R.UL
             // string name = (string) Session["name"];
             // lblFirstName.Text = "Welcome back, " + name.ToString();
 
-            /* Only used for first account since database has not been created */
-            lblFirstName.Text = "Welcome back, Geoff";
+            /* Display user's details if they are logged in */
+            if (Session["username"] != null)
+            {
+                /* Only used for first account since database has not been created */
+                lblFirstName.Text = "Welcome back, Geoff";
 
-            /* Retrieve and display username */
-            string username = (string)Session["username"];
-            lblUsername.Text = "Username: " + username.ToString();
+                /* Retrieve and display username */
+                string username = (string)Session["username"];
+                lblUsername.Text = "Username: " + username.ToString();
+            }
         }
     }
 }
