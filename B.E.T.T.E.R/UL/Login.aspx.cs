@@ -19,13 +19,14 @@ namespace B.E.T.T.E.R.UL
             /* Only used for first account since database has not been created */
             if (txtUsername.Text == "geoff.skinner@newcastle.edu.au" && txtPwd.Text == "better3050")
             {
-                
+                /* Create session and redirect user to main menu */
                 Session["username"] = Convert.ToString(txtUsername.Text);
                 Response.Redirect("MainMenu.aspx");
 
             }
             else
             {
+                /* Display error if user details are incorrect */
                 lblError.Visible = true;
             }
         }

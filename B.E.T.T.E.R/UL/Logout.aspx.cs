@@ -11,6 +11,7 @@ namespace B.E.T.T.E.R.UL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            /* Terminate session for user */
             Session.Abandon();
         }
     }

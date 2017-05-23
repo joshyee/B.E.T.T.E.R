@@ -16,6 +16,7 @@ namespace B.E.T.T.E.R.UL
 
         protected void btnRegister_Click(object sender, EventArgs e)
         {
+            /* Create new session and redirect user to main menu if form fields are valid */
             if (IsValid) {
 
                 Session["name"] = Convert.ToString(txtFirstName.Text);
