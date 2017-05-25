@@ -13,5 +13,15 @@ namespace B.E.T.T.E.R.UL
         {
 
         }
+
+        protected void btnUpload_Click(object sender, EventArgs e)
+        {
+            Page.Validate("UploadInfoGroup");
+            if (Page.IsValid)
+            {
+                int XP = Convert.ToInt32(txtXP.Text);
+                System.Diagnostics.Debug.WriteLine(XP);
+            }
+        }
     }
 }
