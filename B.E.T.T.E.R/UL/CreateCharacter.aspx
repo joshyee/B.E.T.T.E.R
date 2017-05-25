@@ -14,7 +14,7 @@
                 <li><strong>Strength and Weakness</strong></li>
                 <li>Stronger than Air, but weaker than Water</li><br />
             </ul>
-            <asp:Button ID="fireTitan" class="createCharacter" runat="server" Text="Create Character" OnClick="fireTitan_Click" /> 
+            <asp:Button ID="fireTitan" class="createCharacter" runat="server" Text="Create Character" OnClick="fireTitan_Click" ToolTip="Click to create character" /> 
         </div>
         <div>
             <ul class="character-info">
@@ -26,7 +26,7 @@
                 <li><strong>Strength and Weakness</strong></li>
                 <li>Stronger than Earth, but weaker than Fire</li><br />
             </ul>
-            <asp:Button ID="airTitan" class="createCharacter" runat="server" Text="Create Character" /> 
+            <asp:Button ID="airTitan" class="createCharacter" runat="server" Text="Create Character" ToolTip="Click to create character" /> 
         </div>
         <div>
              <ul class="character-info">
@@ -38,7 +38,7 @@
                 <li><strong>Strength and Weakness</strong></li>
                 <li>Stronger than Water, but weaker than Air</li><br />
             </ul>
-            <asp:Button ID="earthTitan" class="createCharacter" runat="server" Text="Create Character" /> 
+            <asp:Button ID="earthTitan" class="createCharacter" runat="server" Text="Create Character" ToolTip="Click to create character" /> 
         </div>
         <div>
             <ul class="character-info">
@@ -50,7 +50,7 @@
                 <li><strong>Strength and Weakness</strong></li>
                 <li>Stronger than Fire, but weaker than Earth</li><br />
             </ul>
-            <asp:Button ID="waterTitan" class="createCharacter" runat="server" Text="Create Character" /> 
+            <asp:Button ID="waterTitan" class="createCharacter" runat="server" Text="Create Character" ToolTip="Click to create character" /> 
         </div>
     </div>
 </asp:Content>

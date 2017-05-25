@@ -16,7 +16,7 @@
                 <li>Wins: 9</li>
                 <li>Losses: 5</li>
             </ul>
-            <asp:Button class="smallBtn" ID="Button1" runat="server" Text="Challenge" /> 
+            <asp:Button class="smallBtn" ID="Button1" runat="server" Text="Challenge" ToolTip="Click to challenge character" /> 
         </div>
         <div>
             <ul class="character-info">
@@ -30,7 +30,7 @@
                 <li>Wins: 13</li>
                 <li>Losses: 8</li>
             </ul>
-            <asp:Button class="smallBtn" ID="Button2" runat="server" Text="Challenge" /> 
+            <asp:Button class="smallBtn" ID="Button2" runat="server" Text="Challenge" ToolTip="Click to challenge character" /> 
         </div>
         <div>
             <ul class="character-info">
@@ -44,7 +44,7 @@
                 <li>Wins: 6</li>
                 <li>Losses: 3</li>
             </ul>
-            <asp:Button class="smallBtn" ID="Button3" runat="server" Text="Challenge" /> 
+            <asp:Button class="smallBtn" ID="Button3" runat="server" Text="Challenge" ToolTip="Click to challenge character" /> 
         </div>
         <div>
             <ul class="character-info">
@@ -58,7 +58,7 @@
                 <li>Wins: 10</li>
                 <li>Losses: 5</li>
             </ul>
-            <asp:Button class="smallBtn" ID="Button4" runat="server" Text="Challenge" /> 
+            <asp:Button class="smallBtn" ID="Button4" runat="server" Text="Challenge" ToolTip="Click to challenge character" /> 
         </div>
     </div>
 </asp:Content>

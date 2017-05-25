@@ -21,8 +21,8 @@
         </div>
         <div>
             <h1 id="versus">vs.</h1>
-            <asp:Button ID="Button1" runat="server" Text="Begin Fight" /><br />
-            <asp:Button ID="Button2" runat="server" Text="Cancel Fight" />
+            <asp:Button ID="Button1" runat="server" Text="Begin Fight" ToolTip="Click to begin fight" /><br />
+            <asp:Button ID="Button2" runat="server" Text="Cancel Fight" ToolTip="Click to cancel fight" />
         </div>
         <div>
             <ul class="character-info">

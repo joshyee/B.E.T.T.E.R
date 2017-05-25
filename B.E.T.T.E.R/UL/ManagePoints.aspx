@@ -14,7 +14,7 @@
                 <li>Level 1</li>
                 <li>Step 2</li>
                 <li>250 XP</li>
-                <asp:TextBox class="txtXP" ID="TextBox1" runat="server" placeholder="XP"></asp:TextBox>
+                <asp:TextBox class="txtXP" ID="TextBox1" runat="server" placeholder="XP" ToolTip="Enter exercise points"></asp:TextBox>
                 <li>
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Incorrect value, please enter a number" ValidationExpression="^[0-9]*$" ControlToValidate="TextBox1"></asp:RegularExpressionValidator>
                 </li>
@@ -28,12 +28,12 @@
                 <li>Level 2</li>
                 <li>Step 2</li>
                 <li>1500 XP</li>
-                <asp:TextBox class="txtXP" ID="TextBox2" runat="server" placeholder="XP"></asp:TextBox>
+                <asp:TextBox class="txtXP" ID="TextBox2" runat="server" placeholder="XP" ToolTip="Enter exercise points"></asp:TextBox>
                 <li>
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="Incorrect value, please enter a number" ValidationExpression="^[0-9]*$" ControlToValidate="TextBox2"></asp:RegularExpressionValidator>
                 </li>
             </ul>
         </div>
-        <asp:Button class="smallBtn" ID="Button1" runat="server" Text="Add XP" />
+        <asp:Button class="smallBtn" ID="Button1" runat="server" Text="Add XP" ToolTip="Click to add exercise points" />
     </div>
 </asp:Content>

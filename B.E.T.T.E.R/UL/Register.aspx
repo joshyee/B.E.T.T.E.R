@@ -29,7 +29,7 @@
         <tr>
             <td class="auto-style3">First Name</td>
             <td class="auto-style5">
-                <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtFirstName" runat="server" ToolTip="Enter your first name"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator5" class="validatorMessage" runat="server" ControlToValidate="txtFirstName" ErrorMessage="First name" ValidationGroup="RegisterInfoGroup">*</asp:RequiredFieldValidator>
@@ -39,7 +39,7 @@
         <tr>
             <td class="auto-style3">Last Name</td>
             <td class="auto-style5">
-                <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtLastName" runat="server" ToolTip="Enter your last name"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator6" class="validatorMessage" runat="server" ControlToValidate="txtLastName" ErrorMessage="Last name" ValidationGroup="RegisterInfoGroup">*</asp:RequiredFieldValidator>
@@ -49,7 +49,7 @@
         <tr>
             <td class="auto-style3">Email</td>
             <td class="auto-style5">
-                <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtEmail" runat="server" ToolTip="Enter your email address"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" class="validatorMessage" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email address" ValidationGroup="RegisterInfoGroup">*</asp:RequiredFieldValidator>
@@ -59,7 +59,7 @@
         <tr>
             <td class="auto-style3">Parent Email</td>
             <td class="auto-style5">
-                <asp:TextBox ID="txtParentEmail" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtParentEmail" runat="server" ToolTip="Enter your parent's email address"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" class="validatorMessage" runat="server" ControlToValidate="txtParentEmail" ErrorMessage="Parent email address" ValidationGroup="RegisterInfoGroup">*</asp:RequiredFieldValidator>
@@ -69,7 +69,7 @@
         <tr>
             <td class="auto-style3">New Password</td>
             <td class="auto-style5">
-                <asp:TextBox ID="txtPwd" runat="server" TextMode="Password"></asp:TextBox>
+                <asp:TextBox ID="txtPwd" runat="server" TextMode="Password" ToolTip="Enter a new password"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" class="validatorMessage" runat="server" ControlToValidate="txtPwd" ErrorMessage="New password" ValidationGroup="RegisterInfoGroup">*</asp:RequiredFieldValidator>
@@ -79,7 +79,7 @@
         <tr>
             <td class="auto-style3">Confirm Password</td>
             <td class="auto-style5">
-                <asp:TextBox ID="txtConfirmPwd" runat="server" TextMode="Password"></asp:TextBox>
+                <asp:TextBox ID="txtConfirmPwd" runat="server" TextMode="Password" ToolTip="Re-enter your new password"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" class="validatorMessage" runat="server" ControlToValidate="txtConfirmPwd" ErrorMessage="Confirm password" ValidationGroup="RegisterInfoGroup">*</asp:RequiredFieldValidator>
@@ -89,7 +89,7 @@
         <tr>
             <td class="auto-style3">&nbsp;</td>
             <td class="auto-style5">
-                <asp:Button ID="btnRegister" runat="server" OnClick="btnRegister_Click" Text="Register" />
+                <asp:Button ID="btnRegister" runat="server" OnClick="btnRegister_Click" Text="Register" ToolTip="Click to register" />
             </td>
             <td class="auto-style4">&nbsp;</td>
         </tr>

@@ -42,7 +42,7 @@
         <tr>
             <td class="auto-style3">Username</td>
             <td class="auto-style5">
-                <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtUsername" runat="server" ToolTip="Enter your email address"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUsername" ErrorMessage="Username">*</asp:RequiredFieldValidator>
@@ -51,7 +51,7 @@
         <tr>
             <td class="auto-style3">Password</td>
             <td class="auto-style5">
-                <asp:TextBox ID="txtPwd" runat="server" TextMode="Password"></asp:TextBox>
+                <asp:TextBox ID="txtPwd" runat="server" TextMode="Password" ToolTip="Enter your password"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPwd" ErrorMessage="Password">*</asp:RequiredFieldValidator>
@@ -60,7 +60,7 @@
         <tr>
             <td class="auto-style10">&nbsp;</td>
             <td class="auto-style5">
-                <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="Login" />
+                <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="Login" ToolTip="Click to login" />
             </td>
             <td class="auto-style9">
                 &nbsp;</td>

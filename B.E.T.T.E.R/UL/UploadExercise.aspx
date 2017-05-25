@@ -1,11 +1,6 @@
 ﻿<%@ Page Title="Upload Exercise - B.E.T.T.E.R" Language="C#" MasterPageFile="~/Member.Master" AutoEventWireup="true" CodeBehind="UploadExercise.aspx.cs" Inherits="B.E.T.T.E.R.UL.UploadExercise" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
-        .auto-style6 {
-            width: 100%;
-        }
-    </style>
-</asp:Content>
+    </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Upload Exercise</h1>
     
@@ -18,9 +13,9 @@
             <td class="auto-style4">&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style7">Enter your daily exercise</td>
+            <td class="auto-style7">Exercise Points</td>
             <td class="auto-style5">
-                <asp:TextBox ID="txtXP" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtXP" runat="server" ToolTip="Enter your daily exercise points"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtXP" ErrorMessage="Daily exercise" ValidationGroup="UploadInfoGroup">*</asp:RequiredFieldValidator>
@@ -30,7 +25,7 @@
         <tr>
             <td class="auto-style7">PIN</td>
             <td class="auto-style5">
-                <asp:TextBox ID="txtPIN" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtPIN" runat="server" ToolTip="Enter the PIN sent to parent's email address"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPIN" ErrorMessage="PIN that was sent to parent's email" ValidationGroup="UploadInfoGroup">*</asp:RequiredFieldValidator>
@@ -40,7 +35,7 @@
         <tr>
             <td class="auto-style7">&nbsp;</td>
             <td class="auto-style4">
-                <asp:Button ID="btnUpload" runat="server" Text="Upload" OnClick="btnUpload_Click" />
+                <asp:Button ID="btnUpload" runat="server" Text="Upload" OnClick="btnUpload_Click" ToolTip="Click to upload exercise points" />
             </td>
             <td class="auto-style4">&nbsp;</td>
         </tr>
