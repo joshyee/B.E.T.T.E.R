@@ -17,10 +17,12 @@ namespace B.E.T.T.E.R.UL
         protected void btnRegister_Click(object sender, EventArgs e)
         {
             /* Create new session and redirect user to main menu if form fields are valid */
-            if (IsValid) {
-
+            Page.Validate("RegisterInfoGroup");
+            if (Page.IsValid)
+            {
                 Session["name"] = Convert.ToString(txtFirstName.Text);
                 Session["username"] = Convert.ToString(txtEmail.Text);
+                Session["message"] = "Welcome to B.E.T.T.E.R, " + Session["name"];
                 Response.Redirect("MainMenu.aspx");
 
             }

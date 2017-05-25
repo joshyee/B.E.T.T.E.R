@@ -19,7 +19,8 @@ namespace B.E.T.T.E.R.UL
             if (Session["username"] != null)
             {
                 /* Only used for first account since database has not been created */
-                lblFirstName.Text = "Welcome back, Geoff";
+                //lblFirstName.Text = "Welcome back, Geoff";
+                lblFirstName.Text = (string)Session["message"];
 
                 /* Retrieve and display username */
                 string username = (string)Session["username"];

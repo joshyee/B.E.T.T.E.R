@@ -16,6 +16,7 @@ namespace B.E.T.T.E.R.UL
 
         protected void btnUpload_Click(object sender, EventArgs e)
         {
+            /* Check if the form values on the Upload Exericse page are valid */
             Page.Validate("UploadInfoGroup");
             if (Page.IsValid)
             {
