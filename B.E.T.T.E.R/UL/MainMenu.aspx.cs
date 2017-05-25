@@ -27,5 +27,15 @@ namespace B.E.T.T.E.R.UL
                 lblUsername.Text = "Username: " + username.ToString();
             }
         }
+
+        protected void btnManagePoints_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ManagePoints.aspx");
+        }
+
+        protected void btnViewMore_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ManageCharacters.aspx");
+        }
     }
 }

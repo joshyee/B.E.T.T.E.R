@@ -31,6 +31,15 @@ namespace B.E.T.T.E.R.UL {
         protected global::System.Web.UI.WebControls.Label lblUsername;
         
         /// <summary>
+        /// btnManagePoints control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnManagePoints;
+        
+        /// <summary>
         /// fire control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace B.E.T.T.E.R.UL {
         protected global::System.Web.UI.WebControls.Image fire;
         
         /// <summary>
+        /// btnViewMore1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnViewMore1;
+        
+        /// <summary>
         /// water control.
         /// </summary>
         /// <remarks>
@@ -47,5 +65,14 @@ namespace B.E.T.T.E.R.UL {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image water;
+        
+        /// <summary>
+        /// btnViewMore2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnViewMore2;
     }
 }

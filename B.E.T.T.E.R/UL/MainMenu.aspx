@@ -8,7 +8,7 @@
         <div class="my-points-balance">
             <h2>My Points Balance</h2>
             <h3>600</h3>
-            <h4><a href="ManagePoints.aspx">Manage Points</a></h4>
+            <asp:Button ID="btnManagePoints" runat="server" Text="Manage Points" OnClick="btnManagePoints_Click" />
             <br />
             <h2>Recent Fights</h2>
             <ul class="fight-info">
@@ -43,7 +43,7 @@
                     <li><strong>Ignis</strong></li>
                     <li>Fire Titan</li>
                     <li>Level 1</li>
-                    <li><strong><a href="ManageCharacters.aspx">View more</a></strong></li>
+                    <asp:Button class="mediumBtn" ID="btnViewMore1" runat="server" Text="View More" OnClick="btnViewMore_Click" />
                 </ul>
             </div>
             <div>
@@ -52,7 +52,7 @@
                     <li><strong>Aqueous</strong></li>
                     <li>Water Titan</li>
                     <li>Level 2</li>
-                    <li><strong><a href="ManageCharacters.aspx">View more</a></strong></li>
+                    <asp:Button class="mediumBtn" ID="btnViewMore2" runat="server" Text="View More" OnClick="btnViewMore_Click" />
                 </ul>
             </div>
     </div> 
