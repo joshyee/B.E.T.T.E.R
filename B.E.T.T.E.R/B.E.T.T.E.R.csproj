@@ -111,6 +111,17 @@
     <Content Include="scripts\jquery-3.1.1.slim.min.js" />
     <Content Include="scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="scripts\jquery-3.1.1.min.map" />
+    <Content Include="udbBetterDataSet.xsc">
+      <DependentUpon>udbBetterDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="udbBetterDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>udbBetterDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="udbBetterDataSet.xss">
+      <DependentUpon>udbBetterDataSet.xsd</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -172,6 +183,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="udbBetterDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>udbBetterDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="UL\Challenge.aspx.cs">
       <DependentUpon>Challenge.aspx</DependentUpon>
