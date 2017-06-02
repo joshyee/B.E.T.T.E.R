@@ -27,23 +27,13 @@
                 &nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style3">First Name</td>
+            <td class="auto-style3">Username</td>
             <td class="auto-style5">
-                <asp:TextBox ID="txtFirstName" runat="server" ToolTip="Enter your first name"></asp:TextBox>
+                <asp:TextBox ID="txtUsername" runat="server" ToolTip="Enter your new username"></asp:TextBox>
             </td>
             <td class="auto-style4">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" class="validatorMessage" runat="server" ControlToValidate="txtFirstName" ErrorMessage="First name" ValidationGroup="RegisterInfoGroup">*</asp:RequiredFieldValidator>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ErrorMessage="First name is not valid" ValidationExpression="^[a-zA-Z]+$" ControlToValidate="txtFirstName" ValidationGroup="RegisterInfoGroup"></asp:RegularExpressionValidator>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style3">Last Name</td>
-            <td class="auto-style5">
-                <asp:TextBox ID="txtLastName" runat="server" ToolTip="Enter your last name"></asp:TextBox>
-            </td>
-            <td class="auto-style4">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" class="validatorMessage" runat="server" ControlToValidate="txtLastName" ErrorMessage="Last name" ValidationGroup="RegisterInfoGroup">*</asp:RequiredFieldValidator>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ErrorMessage="Last name is not valid" ValidationExpression="^[a-zA-Z]+$" ControlToValidate="txtLastName" ValidationGroup="RegisterInfoGroup"></asp:RegularExpressionValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" class="validatorMessage" runat="server" ControlToValidate="txtUsername" ErrorMessage="First name" ValidationGroup="RegisterInfoGroup">*</asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ErrorMessage="First name is not valid" ValidationExpression="^[a-zA-Z]+$" ControlToValidate="txtUsername" ValidationGroup="RegisterInfoGroup"></asp:RegularExpressionValidator>
             </td>
         </tr>
         <tr>
@@ -54,16 +44,6 @@
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" class="validatorMessage" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email address" ValidationGroup="RegisterInfoGroup">*</asp:RequiredFieldValidator>
                 <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email address is not valid" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="RegisterInfoGroup">Email address is not valid</asp:RegularExpressionValidator>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style3">Parent Email</td>
-            <td class="auto-style5">
-                <asp:TextBox ID="txtParentEmail" runat="server" ToolTip="Enter your parent's email address"></asp:TextBox>
-            </td>
-            <td class="auto-style4">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" class="validatorMessage" runat="server" ControlToValidate="txtParentEmail" ErrorMessage="Parent email address" ValidationGroup="RegisterInfoGroup">*</asp:RequiredFieldValidator>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtParentEmail" ErrorMessage="Parent email address is not valid" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="RegisterInfoGroup">Parent email address is not valid</asp:RegularExpressionValidator>
             </td>
         </tr>
         <tr>
@@ -84,6 +64,16 @@
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" class="validatorMessage" runat="server" ControlToValidate="txtConfirmPwd" ErrorMessage="Confirm password" ValidationGroup="RegisterInfoGroup">*</asp:RequiredFieldValidator>
                 <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtPwd" ControlToValidate="txtConfirmPwd" ErrorMessage="Password not matching, please try again" ValidationGroup="RegisterInfoGroup">Password not matching, please try again</asp:CompareValidator>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style3">Parent Email</td>
+            <td class="auto-style5">
+                <asp:TextBox ID="txtParentEmail" runat="server" ToolTip="Enter your parent's email address"></asp:TextBox>
+            </td>
+            <td class="auto-style4">
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" class="validatorMessage" runat="server" ControlToValidate="txtParentEmail" ErrorMessage="Parent email address" ValidationGroup="RegisterInfoGroup">*</asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtParentEmail" ErrorMessage="Parent email address is not valid" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="RegisterInfoGroup">Parent email address is not valid</asp:RegularExpressionValidator>
             </td>
         </tr>
         <tr>

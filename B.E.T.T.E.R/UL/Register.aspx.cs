@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace B.E.T.T.E.R.UL
 {
@@ -11,7 +13,21 @@ namespace B.E.T.T.E.R.UL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (IsPostBack)
+            {
+                // Check if username already exists in database
+                SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["udbBetterConnectionString"].ConnectionString);
+                conn.Open();
+                string checkUser = "select count(*) from tblUser where username =  '" + txtUsername.Text  + "'";
+                SqlCommand com = new SqlCommand(checkUser, conn);
+                int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
+                if (temp == 1)
+                {
+                    Response.Write("User already Exists");
+                }
 
+                conn.Close();
+            }
         }
 
         protected void btnRegister_Click(object sender, EventArgs e)
@@ -20,11 +36,41 @@ namespace B.E.T.T.E.R.UL
             Page.Validate("RegisterInfoGroup");
             if (Page.IsValid)
             {
-                Session["name"] = Convert.ToString(txtFirstName.Text);
-                Session["username"] = Convert.ToString(txtEmail.Text);
-                Session["message"] = "Welcome to B.E.T.T.E.R, " + Session["name"];
-                Response.Redirect("MainMenu.aspx");
+                // Insert new user in database
+                try
+                {
+                    SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["udbBetterConnectionString"].ConnectionString);
+                    conn.Open();
+                    string insertQuery = "insert into tblUser (username,email,passcode,parentEmail, pIN, active) values (@username, @email, @password, @parentEmail, @pIN, @active)";
+                    SqlCommand com = new SqlCommand(insertQuery, conn);
+                    com.Parameters.AddWithValue("@username", txtUsername.Text);
+                    com.Parameters.AddWithValue("@email", txtEmail.Text);
+                    com.Parameters.AddWithValue("@password", txtPwd.Text);
+                    com.Parameters.AddWithValue("@parentEmail", txtParentEmail.Text);
+                    Random random = new Random();
+                    int pIN = random.Next(1000, 9999);
+                    com.Parameters.AddWithValue("@pIN", pIN);
+                    com.Parameters.AddWithValue("@active", true);
 
+                    com.ExecuteNonQuery();
+
+                    Session["name"] = Convert.ToString(txtUsername.Text);
+                    Session["username"] = Convert.ToString(txtEmail.Text);
+                    Session["message"] = "Welcome to B.E.T.T.E.R, " + Session["name"];
+
+                    Response.Redirect("ManageProfile.aspx");
+                    Response.Write("Registration is successful");
+
+
+                    conn.Close();
+
+                }
+                catch (Exception ex)
+                {
+                    Response.Write("Error:" + ex.ToString());
+                }
+                
+    
             }
         }
     }
