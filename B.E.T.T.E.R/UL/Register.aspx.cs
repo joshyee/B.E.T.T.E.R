@@ -21,12 +21,13 @@ namespace B.E.T.T.E.R.UL
                 string checkUser = "select count(*) from tblUser where username =  '" + txtUsername.Text  + "'";
                 SqlCommand com = new SqlCommand(checkUser, conn);
                 int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
+                conn.Close();
                 if (temp == 1)
                 {
                     Response.Write("User already Exists");
                 }
 
-                conn.Close();
+                
             }
         }
 

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace B.E.T.T.E.R.UL
 {
@@ -11,21 +13,38 @@ namespace B.E.T.T.E.R.UL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /* Retrieve and display user's first name */
-            // string name = (string) Session["name"];
-            // lblFirstName.Text = "Welcome back, " + name.ToString();
 
-            /* Display user's details if they are logged in */
-            if (Session["username"] != null)
+            // Get the user's email from the database
+            
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["udbBetterConnectionString"].ConnectionString);
+            conn.Open();
+            string checkUser = "select count(*) from tblUser where username =  '" + (string)Session["user"] + "'";
+            SqlCommand com = new SqlCommand(checkUser, conn);
+            int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
+            conn.Close();
+            if (temp == 1)
             {
-                /* Only used for first account since database has not been created */
-                //lblFirstName.Text = "Welcome back, Geoff";
-                lblFirstName.Text = (string)Session["message"];
+                conn.Open();
+                string checkPasswordQuery = "select email from tblUser where username =  '" + (string)Session["user"] + "'";
+                SqlCommand passComm = new SqlCommand(checkPasswordQuery, conn);
+                string email = passComm.ExecuteScalar().ToString().Replace(" ", "");
 
-                /* Retrieve and display username */
-                string username = (string)Session["username"];
-                lblUsername.Text = "Username: " + username.ToString();
+                lblUsername.Text = "Welcome back, " + (string)Session["user"];
+                lblEmail.Text = "Email: " + email;
             }
+          
+           
+
+            /* Display user's details 
+            if (Session["user"] != null)
+            {
+                
+                lblUsername.Text = (string)Session["message"];
+
+                string username = (string)Session["username"];
+                lblEmail.Text = "Username: " + username.ToString();
+            }
+            */
         }
 
         protected void btnManagePoints_Click(object sender, EventArgs e)

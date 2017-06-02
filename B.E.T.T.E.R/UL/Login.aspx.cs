@@ -18,26 +18,36 @@ namespace B.E.T.T.E.R.UL
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            /* Only used for first account since database has not been created 
-               Modify this code once database is connected
-             */
-            if (txtUsername.Text == "geoff.skinner@newcastle.edu.au" && txtPwd.Text == "better3050")
+            // Check if user exists in database
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["udbBetterConnectionString"].ConnectionString);
+            conn.Open();
+            string checkUser = "select count(*) from tblUser where username =  '" + txtUsername.Text + "'";
+            SqlCommand com = new SqlCommand(checkUser, conn);
+            int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
+            conn.Close();
+            if (temp == 1)
             {
-                /* Create session and redirect user to main menu */
-                Session["username"] = Convert.ToString(txtUsername.Text);
-                Session["message"] = "Welcome back, " + "Geoff";
-                Response.Redirect("MainMenu.aspx");
+                conn.Open();
+                string checkPasswordQuery = "select passcode from tblUser where username =  '" + txtUsername.Text + "'";
+                SqlCommand passComm = new SqlCommand(checkPasswordQuery, conn);
+                string password = passComm.ExecuteScalar().ToString().Replace(" ", "");
+                if (password == txtPwd.Text)
+                {
+                    // If username and password is correct, start session and redirect member to the main menu
+                    Session["user"] = txtUsername.Text;
+                    Response.Redirect("MainMenu.aspx");
+                }
+                else
+                {
+                    lblError.Visible = true;
+                }
+               
             }
             else
             {
-                /* Display error if user details are incorrect */
                 lblError.Visible = true;
             }
 
-            /*
-                Write some code to get the user's first name from the database
-                Session["message"] = "Welcome back, " + First Name;
-             */
         }
     }
 }

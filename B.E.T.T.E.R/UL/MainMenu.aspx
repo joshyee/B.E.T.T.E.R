@@ -3,8 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <h1>Main Menu</h1>
-        <asp:Label ID="lblFirstName" runat="server" Text="Label"></asp:Label>
         <asp:Label ID="lblUsername" runat="server" Text="Label"></asp:Label>
+        <asp:Label ID="lblEmail" runat="server" Text="Label"></asp:Label>
         <div class="my-points-balance">
             <h2>My Points Balance</h2>
             <h3>600</h3>
