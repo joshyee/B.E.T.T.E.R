@@ -37,7 +37,7 @@ namespace B.E.T.T.E.R.UL
             Page.Validate("RegisterInfoGroup");
             if (Page.IsValid)
             {
-                // Insert new user in database
+                // Insert new user details into database 
                 try
                 {
                     SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["udbBetterConnectionString"].ConnectionString);
@@ -48,26 +48,18 @@ namespace B.E.T.T.E.R.UL
                     com.Parameters.AddWithValue("@email", txtEmail.Text);
                     com.Parameters.AddWithValue("@password", txtPwd.Text);
                     com.Parameters.AddWithValue("@parentEmail", txtParentEmail.Text);
+                    // Generate random number for PIN
                     Random random = new Random();
                     int pIN = random.Next(1000, 9999);
                     com.Parameters.AddWithValue("@pIN", pIN);
                     com.Parameters.AddWithValue("@active", true);
-
                     com.ExecuteNonQuery();
-
-                    Session["name"] = Convert.ToString(txtUsername.Text);
-                    Session["username"] = Convert.ToString(txtEmail.Text);
-                    Session["message"] = "Welcome to B.E.T.T.E.R, " + Session["name"];
-
-                    Response.Redirect("ManageProfile.aspx");
-                    Response.Write("Registration is successful");
-
-
                     conn.Close();
 
                 }
                 catch (Exception ex)
                 {
+                    // Display error on the web form
                     Response.Write("Error:" + ex.ToString());
                 }
                 

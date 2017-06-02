@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Manage XP</h1>
     <h3>Current Balance</h3>
-    <p>600 XP</p>
+    <asp:Label ID="lblExercisePoints" runat="server" Text="Exercise Points"></asp:Label>
     <div class="col-group">
         <div>
             <ul class="character-info">

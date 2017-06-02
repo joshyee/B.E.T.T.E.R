@@ -39,12 +39,14 @@ namespace B.E.T.T.E.R.UL
                 }
                 else
                 {
+                    // Incorrect username or password
                     lblError.Visible = true;
                 }
                
             }
             else
             {
+                // Incorrect username or password
                 lblError.Visible = true;
             }
 

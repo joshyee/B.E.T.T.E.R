@@ -14,8 +14,7 @@ namespace B.E.T.T.E.R.UL
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            // Get the user's email from the database
-            
+           // Open new connection and find user in the database
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["udbBetterConnectionString"].ConnectionString);
             conn.Open();
             string checkUser = "select count(*) from tblUser where username =  '" + (string)Session["user"] + "'";
@@ -24,27 +23,25 @@ namespace B.E.T.T.E.R.UL
             conn.Close();
             if (temp == 1)
             {
+                // Get the user's email from the database
                 conn.Open();
-                string checkPasswordQuery = "select email from tblUser where username =  '" + (string)Session["user"] + "'";
-                SqlCommand passComm = new SqlCommand(checkPasswordQuery, conn);
-                string email = passComm.ExecuteScalar().ToString().Replace(" ", "");
-
+                string checkEmailQuery = "select email from tblUser where username =  '" + (string)Session["user"] + "'";
+                SqlCommand emailComm = new SqlCommand(checkEmailQuery, conn);
+                string email = emailComm.ExecuteScalar().ToString().Replace(" ", "");
+                
                 lblUsername.Text = "Welcome back, " + (string)Session["user"];
                 lblEmail.Text = "Email: " + email;
+
+                // Get the user's exercise points balance from the database
+                string checkPointsQuery = "select exercisePoints from tblUser where username =  '" + (string)Session["user"] + "'";
+                SqlCommand pointsComm = new SqlCommand(checkPointsQuery, conn);
+                string points = pointsComm.ExecuteScalar().ToString().Replace(" ", "");
+
+                lblExercisePoints.Text = points + " XP";
+                conn.Close();
             }
           
-           
-
-            /* Display user's details 
-            if (Session["user"] != null)
-            {
-                
-                lblUsername.Text = (string)Session["message"];
-
-                string username = (string)Session["username"];
-                lblEmail.Text = "Username: " + username.ToString();
-            }
-            */
+  
         }
 
         protected void btnManagePoints_Click(object sender, EventArgs e)
