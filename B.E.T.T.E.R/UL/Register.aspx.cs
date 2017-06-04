@@ -24,7 +24,8 @@ namespace B.E.T.T.E.R.UL
                 conn.Close();
                 if (temp == 1)
                 {
-                    Response.Write("User already Exists");
+                    // Display user exists error
+                    lblError.Visible = true;
                 }
 
                 
@@ -56,11 +57,15 @@ namespace B.E.T.T.E.R.UL
                     com.ExecuteNonQuery();
                     conn.Close();
 
+                    // Start new session and redirect user to main menu
+                    Session["user"] = txtUsername.Text;
+                    Response.Redirect("MainMenu.aspx");
+
                 }
                 catch (Exception ex)
                 {
-                    // Display error on the web form
-                    Response.Write("Error:" + ex.ToString());
+                    // Display user exists error
+                    lblError.Visible = true;
                 }
                 
     

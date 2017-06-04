@@ -27,13 +27,21 @@
                 &nbsp;</td>
         </tr>
         <tr>
+            <td class="auto-style3">&nbsp;</td>
+            <td class="auto-style5">
+                <asp:Label ID="lblError" runat="server" Text="User account already exists, please log in" Visible="False"></asp:Label>
+            </td>
+            <td class="auto-style4">
+                &nbsp;</td>
+        </tr>
+        <tr>
             <td class="auto-style3">Username</td>
             <td class="auto-style5">
                 <asp:TextBox ID="txtUsername" runat="server" ToolTip="Enter your new username"></asp:TextBox>
             </td>
             <td class="auto-style4">
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator5" class="validatorMessage" runat="server" ControlToValidate="txtUsername" ErrorMessage="First name" ValidationGroup="RegisterInfoGroup">*</asp:RequiredFieldValidator>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ErrorMessage="First name is not valid" ValidationExpression="^[a-zA-Z]+$" ControlToValidate="txtUsername" ValidationGroup="RegisterInfoGroup"></asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ErrorMessage="Username is not valid" ValidationExpression="^[a-zA-Z]+$" ControlToValidate="txtUsername" ValidationGroup="RegisterInfoGroup"></asp:RegularExpressionValidator>
             </td>
         </tr>
         <tr>

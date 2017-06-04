@@ -201,6 +201,11 @@ input[class="mediumBtn"] {
     width: 250px;
 }
 
+.titanError {
+    font-size: 0.95em;
+    color: red;
+}
+
 /* Manage Points page */
 input[class="smallTxtbox"] {
     width: 100px;
