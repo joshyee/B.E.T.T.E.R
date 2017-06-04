@@ -225,6 +225,18 @@ input[class="smallBtn"] {
     margin-left: 75px;
 }
 
+/* Manage Character */
+
+.TableGrid {
+    margin-left: 135%;
+    
+} 
+
+.TableGrid td {
+    text-align: center;
+    padding: 45px;
+}
+
 /* Upload Exercise */
 td.auto-style7 {
     width: 173px;
