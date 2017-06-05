@@ -13,13 +13,13 @@ namespace B.E.T.T.E.R.UL {
     public partial class ManageCharacters {
         
         /// <summary>
-        /// GridView control.
+        /// ManageCharactersGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView;
+        protected global::System.Web.UI.WebControls.GridView ManageCharactersGridView;
         
         /// <summary>
         /// SqlDataSource1 control.

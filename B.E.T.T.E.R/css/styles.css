@@ -191,6 +191,15 @@ input[class="mediumBtn"] {
     margin-left: 30px;
 }
 
+table#ContentPlaceHolder1_MainMenuGridView {
+    margin-top: 50px;
+}
+
+table#ContentPlaceHolder1_MainMenuGridView td {
+    text-align: center;
+    padding: 0px 55px;
+}
+
 /* Select/Create Character page */
 .createCharacter {
     display: block;
@@ -227,13 +236,13 @@ input[class="smallBtn"] {
 
 /* Manage Character */
 
-.TableGrid {
+table#ContentPlaceHolder1_ManageCharactersGridView {
     margin-left: 75px;
-} 
+}
 
-.TableGrid td {
+table#ContentPlaceHolder1_ManageCharactersGridView td {
     text-align: center;
-    padding: 10px 50px;
+    padding: 0px 50px;
 }
 
 .GridViewImage {
