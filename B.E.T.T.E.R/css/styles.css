@@ -191,13 +191,17 @@ input[class="mediumBtn"] {
     margin-left: 30px;
 }
 
-table#ContentPlaceHolder1_MainMenuGridView {
+.TableGrid {
     margin-top: 50px;
+    text-align: center;
 }
 
 table#ContentPlaceHolder1_MainMenuGridView td {
-    text-align: center;
-    padding: 0px 55px;
+    padding: 0px 53px;
+}
+
+.SQLCommandButtons a {
+    font-weight: bold;
 }
 
 /* Select/Create Character page */
@@ -241,7 +245,6 @@ table#ContentPlaceHolder1_ManageCharactersGridView {
 }
 
 table#ContentPlaceHolder1_ManageCharactersGridView td {
-    text-align: center;
     padding: 0px 50px;
 }
 
@@ -259,6 +262,10 @@ input[class="txtXP"] {
     width: 125px;
     display: block;
     margin: 0 auto;
+}
+
+table#ContentPlaceHolder1_ManagePointsGridView td {
+    padding: 0px 55px;
 }
 
 /* Four Column Layout */

@@ -6,34 +6,41 @@
     <h3>Current Balance</h3>
     <asp:Label ID="lblExercisePoints" runat="server" Text="Exercise Points"></asp:Label>
     <div class="col-group">
-        <div>
-            <ul class="character-info">
-                <asp:Image class="character" runat="server" ImageUrl="~/Resources/fire.png" />
-                <li><strong>Ignis</strong></li>
-                <li>Fire Titan</li>
-                <li>Level 1</li>
-                <li>Step 2</li>
-                <li>250 XP</li>
-                <asp:TextBox class="txtXP" ID="TextBox1" runat="server" placeholder="XP" ToolTip="Enter exercise points"></asp:TextBox>
-                <li>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Incorrect value, please enter a number" ValidationExpression="^[0-9]*$" ControlToValidate="TextBox1"></asp:RegularExpressionValidator>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <ul class="character-info">
-                <asp:Image class="character" runat="server" ImageUrl="~/Resources/water.png" />
-                <li><strong>Mizu</strong></li>
-                <li>Water Titan</li>
-                <li>Level 2</li>
-                <li>Step 2</li>
-                <li>1500 XP</li>
-                <asp:TextBox class="txtXP" ID="TextBox2" runat="server" placeholder="XP" ToolTip="Enter exercise points"></asp:TextBox>
-                <li>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="Incorrect value, please enter a number" ValidationExpression="^[0-9]*$" ControlToValidate="TextBox2"></asp:RegularExpressionValidator>
-                </li>
-            </ul>
-        </div>
-        <asp:Button class="smallBtn" ID="Button1" runat="server" Text="Add XP" ToolTip="Click to add exercise points" />
+        <asp:GridView ID="ManagePointsGridView" cssclass="TableGrid" GridLines="None" runat="server" AutoGenerateColumns="False" DataKeyNames="titanId" DataSourceID="SqlDataSource1">
+            <Columns>
+                <asp:CommandField ShowEditButton="true" EditText="Add Points" UpdateText="Add" ItemStyle-CssClass="SQLCommandButtons" />
+                <asp:BoundField DataField="titanName" HeaderText="titanName" SortExpression="titanName" ReadOnly="true"/>
+                <asp:BoundField DataField="experience" HeaderText="experience" SortExpression="experience" />
+                <asp:ImageField DataImageUrlField="imagePath" ReadOnly="true">
+                    <ControlStyle CssClass="GridViewImage" />
+                </asp:ImageField>
+            </Columns>
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:udbBetterConnectionString %>" DeleteCommand="DELETE FROM [tblTitan] WHERE [titanId] = @titanId" InsertCommand="INSERT INTO [tblTitan] ([titanName], [userId], [elementId], [experience], [active], [suspended], [creationDate], [imagePath]) VALUES (@titanName, @userId, @elementId, @experience, @active, @suspended, @creationDate, @imagePath)" SelectCommand="SELECT * FROM [tblTitan]" UpdateCommand="UPDATE [tblTitan] SET [experience] = experience + @experience WHERE [titanId] = @titanId">
+            <DeleteParameters>
+                <asp:Parameter Name="titanId" Type="Int32" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter Name="titanName" Type="String" />
+                <asp:Parameter Name="userId" Type="Int32" />
+                <asp:Parameter Name="elementId" Type="Int32" />
+                <asp:Parameter Name="experience" Type="Int32" />
+                <asp:Parameter Name="active" Type="Boolean" />
+                <asp:Parameter Name="suspended" Type="Boolean" />
+                <asp:Parameter Name="creationDate" Type="DateTime" />
+                <asp:Parameter Name="imagePath" Type="String" />
+            </InsertParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="titanName" Type="String" />
+                <asp:Parameter Name="userId" Type="Int32" />
+                <asp:Parameter Name="elementId" Type="Int32" />
+                <asp:Parameter Name="experience" Type="Int32" />
+                <asp:Parameter Name="active" Type="Boolean" />
+                <asp:Parameter Name="suspended" Type="Boolean" />
+                <asp:Parameter Name="creationDate" Type="DateTime" />
+                <asp:Parameter Name="imagePath" Type="String" />
+                <asp:Parameter Name="titanId" Type="Int32" />
+            </UpdateParameters>
+        </asp:SqlDataSource>
     </div>
 </asp:Content>
