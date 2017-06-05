@@ -10,6 +10,7 @@
             <td class="auto-style5">
                 <asp:ValidationSummary ID="ValidationSummary1" runat="server" HeaderText="Please correct these entries:" />
             </td>
+            <td class="auto-style10"><asp:Label ID="lblSuccess" runat="server" Text="You have successfully uploaded exercise points." Visible="False"></asp:Label></td>
             <td class="auto-style4">&nbsp;</td>
         </tr>
         <tr>
