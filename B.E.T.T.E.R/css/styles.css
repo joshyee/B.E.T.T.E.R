@@ -228,13 +228,16 @@ input[class="smallBtn"] {
 /* Manage Character */
 
 .TableGrid {
-    margin-left: 135%;
-    
+    margin-left: 75px;
 } 
 
 .TableGrid td {
     text-align: center;
-    padding: 45px;
+    padding: 10px 50px;
+}
+
+.GridViewImage {
+    width: 250px;
 }
 
 /* Upload Exercise */

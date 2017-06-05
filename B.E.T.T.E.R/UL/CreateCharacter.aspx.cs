@@ -41,13 +41,14 @@ namespace B.E.T.T.E.R.UL
             {
                 // Insert elemental titan into database
                 conn.Open();
-                string insertQuery = "insert into tblTitan (titanName, userId, elementId, experience, active) values (@titanName, @userId, @elementId, @experience, @active)";
+                string insertQuery = "insert into tblTitan (titanName, userId, elementId, experience, active, imagePath) values (@titanName, @userId, @elementId, @experience, @active, @imagePath)";
                 SqlCommand com = new SqlCommand(insertQuery, conn);
                 com.Parameters.AddWithValue("@titanName", "Fire Titan");
                 com.Parameters.AddWithValue("@userId", userId);
                 com.Parameters.AddWithValue("@elementId", 1);
                 com.Parameters.AddWithValue("@experience", 0);
                 com.Parameters.AddWithValue("@active", true);
+                com.Parameters.AddWithValue("@imagePath", "~/Resources/fire.png");
                 com.ExecuteNonQuery();
                 conn.Close();
             
@@ -80,13 +81,14 @@ namespace B.E.T.T.E.R.UL
             {
                 // Insert elemental titan into database
                 conn.Open();
-                string insertQuery = "insert into tblTitan (titanName, userId, elementId, experience, active) values (@titanName, @userId, @elementId, @experience, @active)";
+                string insertQuery = "insert into tblTitan (titanName, userId, elementId, experience, active, imagePath) values (@titanName, @userId, @elementId, @experience, @active, @imagePath)";
                 SqlCommand com = new SqlCommand(insertQuery, conn);
                 com.Parameters.AddWithValue("@titanName", "Air Titan");
                 com.Parameters.AddWithValue("@userId", userId);
                 com.Parameters.AddWithValue("@elementId", 4);
                 com.Parameters.AddWithValue("@experience", 0);
                 com.Parameters.AddWithValue("@active", true);
+                com.Parameters.AddWithValue("@imagePath", "~/Resources/air.png");
                 com.ExecuteNonQuery();
                 conn.Close();
 
@@ -119,13 +121,14 @@ namespace B.E.T.T.E.R.UL
             {
                 // Insert elemental titan into database
                 conn.Open();
-                string insertQuery = "insert into tblTitan (titanName, userId, elementId, experience, active) values (@titanName, @userId, @elementId, @experience, @active)";
+                string insertQuery = "insert into tblTitan (titanName, userId, elementId, experience, active, imagePath) values (@titanName, @userId, @elementId, @experience, @active, @imagePath)";
                 SqlCommand com = new SqlCommand(insertQuery, conn);
                 com.Parameters.AddWithValue("@titanName", "Earth Titan");
                 com.Parameters.AddWithValue("@userId", userId);
                 com.Parameters.AddWithValue("@elementId", 3);
                 com.Parameters.AddWithValue("@experience", 0);
                 com.Parameters.AddWithValue("@active", true);
+                com.Parameters.AddWithValue("@imagePath", "~/Resources/earth.png");
                 com.ExecuteNonQuery();
                 conn.Close();
 
@@ -158,13 +161,14 @@ namespace B.E.T.T.E.R.UL
             {
                 // Insert elemental titan into database
                 conn.Open();
-                string insertQuery = "insert into tblTitan (titanName, userId, elementId, experience, active) values (@titanName, @userId, @elementId, @experience, @active)";
+                string insertQuery = "insert into tblTitan (titanName, userId, elementId, experience, active, imagePath) values (@titanName, @userId, @elementId, @experience, @active, @imagePath)";
                 SqlCommand com = new SqlCommand(insertQuery, conn);
                 com.Parameters.AddWithValue("@titanName", "Water Titan");
                 com.Parameters.AddWithValue("@userId", userId);
                 com.Parameters.AddWithValue("@elementId", 2);
                 com.Parameters.AddWithValue("@experience", 0);
                 com.Parameters.AddWithValue("@active", true);
+                com.Parameters.AddWithValue("@imagePath", "~/Resources/water.png");
                 com.ExecuteNonQuery();
                 conn.Close();
 
