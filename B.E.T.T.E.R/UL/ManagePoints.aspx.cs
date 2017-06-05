@@ -13,8 +13,15 @@ namespace B.E.T.T.E.R.UL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Open new connection and find user in the database
+            // Get userId from the database
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["udbBetterConnectionString"].ConnectionString);
+            conn.Open();
+            string checkUserId = "select userId from tblUser where username =  '" + (string)Session["user"] + "'";
+            SqlCommand userComm = new SqlCommand(checkUserId, conn);
+            string userId = userComm.ExecuteScalar().ToString().Replace(" ", "");
+            conn.Close();
+
+            // Find user in the database
             conn.Open();
             string checkUser = "select count(*) from tblUser where username =  '" + (string)Session["user"] + "'";
             SqlCommand com = new SqlCommand(checkUser, conn);
