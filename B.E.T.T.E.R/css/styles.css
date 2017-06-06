@@ -180,7 +180,6 @@ span#ContentPlaceHolder1_lblEmail {
 .my-points-balance {
     float: right;
     margin-top: 75px;
-    margin-right: -290px;
     text-align: center;
 }
 
@@ -238,8 +237,24 @@ input[class="smallBtn"] {
     margin-left: 75px;
 }
 
-/* Manage Character */
+table#ContentPlaceHolder1_ChallengeGridView {
+    margin-left: 75px;
+}
 
+table#ContentPlaceHolder1_ChallengeGridView td {
+    padding: 0px 53px;
+}
+
+/* Fight */
+table#ContentPlaceHolder1_FightGridView {
+   
+}
+
+table#ContentPlaceHolder1_FightGridView td {
+    padding: 0px 53px;
+}
+
+/* Manage Character */
 table#ContentPlaceHolder1_ManageCharactersGridView {
     margin-left: 75px;
 }
@@ -250,6 +265,16 @@ table#ContentPlaceHolder1_ManageCharactersGridView td {
 
 .GridViewImage {
     width: 250px;
+}
+
+/* Hall of Fame*/
+
+table#ContentPlaceHolder1_HallOfFameGridView {
+    margin-left: 220px;
+}
+
+table#ContentPlaceHolder1_HallOfFameGridView td {
+    padding: 0px 53px;
 }
 
 /* Upload Exercise */

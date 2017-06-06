@@ -31,17 +31,11 @@ namespace B.E.T.T.E.R.UL
             conn.Close();
             if (temp == 1)
             {
-
-                // Get the user's email from the database
-                conn.Open();
-                string checkEmailQuery = "select email from tblUser where username =  '" + (string)Session["user"] + "'";
-                SqlCommand emailComm = new SqlCommand(checkEmailQuery, conn);
-                string email = emailComm.ExecuteScalar().ToString().Replace(" ", "");
-                
+                // Display welcome message
                 lblUsername.Text = "Welcome back, " + (string)Session["user"];
-                lblEmail.Text = "Email: " + email;
 
                 // Get the user's exercise points balance from the database
+                conn.Open();
                 string checkPointsQuery = "select exercisePoints from tblUser where username =  '" + (string)Session["user"] + "'";
                 SqlCommand pointsComm = new SqlCommand(checkPointsQuery, conn);
                 string points = pointsComm.ExecuteScalar().ToString().Replace(" ", "");

@@ -13,7 +13,23 @@ namespace B.E.T.T.E.R.UL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // Get userId from the database
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["udbBetterConnectionString"].ConnectionString);
+            conn.Open();
+            string checkUserId = "select userId from tblUser where username =  '" + (string)Session["user"] + "'";
+            SqlCommand userComm = new SqlCommand(checkUserId, conn);
+            string userId = userComm.ExecuteScalar().ToString().Replace(" ", "");
+            conn.Close();
+        }
 
+        protected void ChallengeGridView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void GoToFight(object sender, EventArgs e)
+        {
+            Response.Redirect("Fight.aspx");
         }
     }
 }

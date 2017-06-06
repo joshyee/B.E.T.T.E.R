@@ -4,7 +4,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Main Menu</h1>
     <asp:Label ID="lblUsername" runat="server" Text="Username"></asp:Label>
-    <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
     <div class="my-points-balance">
         <h2>My Points Balance</h2>
         <h3><asp:Label ID="lblExercisePoints" runat="server" Text="Exercise Points"></asp:Label></h3>
