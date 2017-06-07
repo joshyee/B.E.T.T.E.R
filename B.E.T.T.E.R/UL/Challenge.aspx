@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Challenge</h1>
     <div class="col-group">
-        <asp:GridView ID="ChallengeGridView" cssclass="TableGrid" GridLines="None" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="ChallengeGridView_SelectedIndexChanged">
+        <asp:GridView ID="ChallengeGridView" cssclass="TableGrid" GridLines="None" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" AllowSorting="True" AllowPaging="true" PageSize="5">
             <Columns>
                 <asp:BoundField DataField="Titan Name" HeaderText="Titan Name" SortExpression="Titan Name" />
                 <asp:BoundField DataField="Username" HeaderText="Username" ReadOnly="True" SortExpression="Username" />
@@ -12,13 +12,13 @@
                 <asp:ImageField DataImageUrlField="imagePath">
                     <ControlStyle CssClass="GridViewImage" />
                 </asp:ImageField>
-                <asp:TemplateField>
-                <ItemTemplate>
-                    <asp:Button ID="btnChallenge" OnClick="GoToFight" Text="Challenge" runat="server" />
-                </ItemTemplate>
-            </asp:TemplateField>
+                <asp:CommandField ButtonType="Button" ShowSelectButton="True" />
             </Columns>
+            <selectedrowstyle backcolor="Black" forecolor="White" font-bold="true"/>  
+            <PagerSettings Mode="NumericFirstLast" />
+            <PagerStyle HorizontalAlign="Center" />
         </asp:GridView>
+        <asp:label id="MessageLabel" forecolor="Red" runat="server"/>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:udbBetterConnectionString %>" SelectCommand="SELECT tblTitan.titanName AS 'Titan Name', MAX(tblUser.username) AS 'Username', COUNT(tblBattle.battleId) AS 'Total Battles', tblTitan.imagePath
 FROM tblTitan
 INNER JOIN tblUser

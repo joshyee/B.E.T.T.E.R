@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Fight</h1>
     <div class="col-group" id="fight">
-        <asp:GridView ID="FightGridView" cssclass="TableGrid" GridLines="None" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+         <asp:GridView cssclass="TableGrid" GridLines="None" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
             <Columns>
                 <asp:BoundField DataField="Titan Name" HeaderText="Titan Name" SortExpression="Titan Name" />
                 <asp:BoundField DataField="Username" HeaderText="Username" ReadOnly="True" SortExpression="Username" />
@@ -15,19 +15,41 @@
             </Columns>
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:udbBetterConnectionString %>" SelectCommand="SELECT TOP 1 tblTitan.titanName AS 'Titan Name', MAX(tblUser.username) AS 'Username', COUNT(tblBattle.battleId) AS 'Total Battles', tblTitan.imagePath
-FROM tblTitan
-INNER JOIN tblUser
-ON tblTitan.userId = tblUser.userId
-INNER JOIN tblBattle
-ON tblTitan.titanId = tblBattle.battler1 OR tblTitan.titanId = tblBattle.battler2
-WHERE tblUser.userId = @userId AND tblTitan.active = @active
-GROUP BY tblTitan.titanName, imagePath
-ORDER BY MAX(tblTitan.creationDate);">
+            FROM tblTitan
+            INNER JOIN tblUser
+            ON tblTitan.userId = tblUser.userId
+            INNER JOIN tblBattle
+            ON tblTitan.titanId = tblBattle.battler1 OR tblTitan.titanId = tblBattle.battler2
+            WHERE tblUser.userId = @userId AND tblTitan.active = @active
+            GROUP BY tblTitan.titanName, imagePath
+            ORDER BY MAX(tblTitan.creationDate);">
         <SelectParameters>
             <asp:SessionParameter Name="userId" SessionField="userId" Type="Int32" />
             <asp:Parameter DefaultValue="true" Name="active" Type="Boolean" />
         </SelectParameters>
         </asp:SqlDataSource>
-
+            
+        <asp:GridView cssclass="TableGrid" GridLines="None" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+            <Columns>
+                <asp:BoundField DataField="Titan Name" HeaderText="Titan Name" SortExpression="Titan Name" />
+                <asp:BoundField DataField="Username" HeaderText="Username" ReadOnly="True" SortExpression="Username" />
+                <asp:BoundField DataField="Total Battles" HeaderText="Total Battles" ReadOnly="True" SortExpression="Total Battles" />
+                <asp:BoundField DataField="imagePath" HeaderText="imagePath" SortExpression="imagePath" />
+            </Columns>
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:udbBetterConnectionString %>" SelectCommand="SELECT tblTitan.titanName AS 'Titan Name', MAX(tblUser.username) AS 'Username', COUNT(tblBattle.battleId) AS 'Total Battles', tblTitan.imagePath
+            FROM tblTitan
+            INNER JOIN tblUser
+            ON tblTitan.userId = @opponentUserId
+            INNER JOIN tblBattle
+            ON tblTitan.titanId = tblBattle.battler1 OR tblTitan.titanId = tblBattle.battler2
+            WHERE tblTitan.titanId = @opponentTitan
+            GROUP BY tblTitan.titanName, imagePath
+            ORDER BY MAX(tblTitan.creationDate);">
+        <SelectParameters>
+            <asp:SessionParameter Name="opponentUserId" SessionField="opponentUserId" />
+            <asp:SessionParameter Name="opponentTitan" SessionField="opponentTitan" />
+        </SelectParameters>
+        </asp:SqlDataSource>
     </div>
 </asp:Content>

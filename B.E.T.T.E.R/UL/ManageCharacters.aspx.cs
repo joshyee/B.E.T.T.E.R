@@ -20,8 +20,6 @@ namespace B.E.T.T.E.R.UL
             SqlCommand userComm = new SqlCommand(checkUserId, conn);
             string userId = userComm.ExecuteScalar().ToString().Replace(" ", "");
             conn.Close();
-
-
         }
     }
 }

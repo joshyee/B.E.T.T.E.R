@@ -5,6 +5,7 @@
     font-family: 'Play', sans-serif;
 }
 
+/* Container Div */
 .container {
     padding: 0 135px;
     margin: 0 160px;
@@ -29,7 +30,7 @@ a {
     text-decoration: none;
 }
 
-/* Menu */
+/* Nav Menu */
 #menu {
     list-style: none;
     margin: 0;
@@ -38,9 +39,9 @@ a {
     border-bottom: 1px solid #000;
 }
 
-    #menu ul {
-        margin-top: -5px;
-    }
+#menu ul {
+    margin-top: -5px;
+}
 
 nav li {
     display: inline;
@@ -51,9 +52,9 @@ nav a {
     padding: 10px;
 }
 
-    nav a:hover {
-        text-decoration: underline;
-    }
+nav a:hover {
+    text-decoration: underline;
+}
 
 .character-info {
     height: 540px;
@@ -66,6 +67,7 @@ nav a {
     padding: 7px;
 }
 
+/* Fight Pages */
 .fight-info {
     height: 380px;
     padding: 20px;
@@ -92,6 +94,7 @@ nav a {
     padding-left: 75px;
 }
 
+/* Div Styles*/
 .left {
     width: 33.3%;
     margin: 100px;
@@ -138,7 +141,7 @@ div#ContentPlaceHolder1_ValidationSummary1 li {
     width: 300px !important;
 }
 
-/*Login page */
+/* Login page */
 .auto-style2 {
     margin-left: 38%;
     margin-top: 20px;
