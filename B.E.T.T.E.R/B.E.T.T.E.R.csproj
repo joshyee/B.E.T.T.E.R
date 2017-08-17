@@ -97,20 +97,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\styles.css" />
+    <Content Include="CSS\styles.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="NonMember.Master" />
     <Content Include="Member.Master" />
-    <None Include="scripts\jquery-3.1.1.intellisense.js" />
-    <Content Include="scripts\jquery-3.1.1.js" />
-    <Content Include="scripts\jquery-3.1.1.min.js" />
-    <Content Include="scripts\jquery-3.1.1.slim.js" />
-    <Content Include="scripts\jquery-3.1.1.slim.min.js" />
-    <Content Include="scripts\jquery-3.1.1.slim.min.map" />
-    <Content Include="scripts\jquery-3.1.1.min.map" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="udbBetterDataSet.xsc">
       <DependentUpon>udbBetterDataSet.xsd</DependentUpon>
     </Content>
@@ -131,17 +131,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <None Include="Resources\dark-blue-wallpaper.jpg" />
-    <None Include="Resources\gold.jpg" />
-    <None Include="Resources\logo.png" />
-    <None Include="Resources\air.png" />
-    <None Include="Resources\earth.png" />
-    <None Include="Resources\vulcan.png" />
-    <None Include="Resources\water.png" />
-    <None Include="Resources\fire.png" />
-    <None Include="Resources\titans.png" />
-    <Content Include="scripts\ai.0.15.0-build58334.js" />
-    <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <None Include="Images\dark-blue-wallpaper.jpg" />
+    <None Include="Images\gold.jpg" />
+    <None Include="Images\logo.png" />
+    <None Include="Images\air.png" />
+    <None Include="Images\earth.png" />
+    <None Include="Images\vulcan.png" />
+    <None Include="Images\water.png" />
+    <None Include="Images\fire.png" />
+    <None Include="Images\titans.png" />
+    <Content Include="Scripts\ai.0.15.0-build58334.js" />
+    <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="UL\Challenge.aspx" />
     <Content Include="UL\Fight.aspx" />
     <Content Include="UL\FightOutcome.aspx" />
@@ -299,11 +299,13 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

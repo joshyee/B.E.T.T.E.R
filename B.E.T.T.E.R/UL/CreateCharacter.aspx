@@ -6,7 +6,7 @@
     <div class="col-group">
         <div>
             <ul class="character-info">
-                <asp:Image class="character" ID="fire" runat="server" ImageUrl="~/Resources/fire.png" />
+                <asp:Image class="character" ID="fire" runat="server" ImageUrl="~/Images/fire.png" />
                 <li><strong>Fire Titan</strong></li>
                 <li><strong>Level 1</strong></li>
                 <li><strong>Abilities:</strong></li>
@@ -19,7 +19,7 @@
         </div>
         <div>
             <ul class="character-info">
-                <asp:Image class="character" ID="air" runat="server" ImageUrl="~/Resources/air.png" />
+                <asp:Image class="character" ID="air" runat="server" ImageUrl="~/Images/air.png" />
                 <li><strong>Air Titan</strong></li>
                 <li><strong>Level 1</strong></li>
                 <li><strong>Abilities:</strong></li>
@@ -32,7 +32,7 @@
         </div>
         <div>
              <ul class="character-info">
-                <asp:Image class="character" ID="earth" runat="server" ImageUrl="~/Resources/earth.png" />
+                <asp:Image class="character" ID="earth" runat="server" ImageUrl="~/Images/earth.png" />
                 <li><strong>Earth Titan</strong></li>
                 <li><strong>Level 1</strong></li>
                 <li><strong>Abilities:</strong></li>
@@ -45,7 +45,7 @@
         </div>
         <div>
             <ul class="character-info">
-                <asp:Image class="character" ID="water" runat="server" ImageUrl="~/Resources/water.png" />
+                <asp:Image class="character" ID="water" runat="server" ImageUrl="~/Images/water.png" />
                 <li><strong>Water Titan</strong></li>
                 <li><strong>Level 1</strong></li>
                 <li><strong>Abilities:</strong></li>

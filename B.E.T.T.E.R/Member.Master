@@ -7,14 +7,14 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="Resources/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="Images/logo.png"/>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
     <nav id="menu">
-        <a href="MainMenu.aspx"><asp:Image ID="logo" runat="server" ImageUrl="~/Resources/logo.png" Width="100px" /></a> 
+        <a href="MainMenu.aspx"><asp:Image ID="logo" runat="server" ImageUrl="~/Images/logo.png" Width="100px" /></a> 
         <ul>
             <li><a href="CreateCharacter.aspx">Create Character</a></li>
             <li><a href="ManageCharacters.aspx">Manage Characters</a></li>

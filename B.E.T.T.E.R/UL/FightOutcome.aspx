@@ -8,7 +8,7 @@
             <ul class="character-info" style="height:650px;" >
                 <li><strong>Player</strong></li>
                 <li>You</li>
-                <asp:Image class="character" runat="server" ImageUrl="~/Resources/fire.png" />
+                <asp:Image class="character" runat="server" ImageUrl="~/Images/fire.png" />
                 <li><strong>Ignis</strong></li>
                 <li>Fire Titan</li>
                 <li>Level 1</li>
@@ -27,7 +27,7 @@
             <ul class="character-info" style="height:650px;">
                 <li><strong>Player</strong></li>
                 <li>Tommy</li>
-                <asp:Image class="character" runat="server" ImageUrl="~/Resources/water.png" />
+                <asp:Image class="character" runat="server" ImageUrl="~/Images/water.png" />
                 <li><strong>Typhoon</strong></li>
                 <li>Water Titan</li>
                 <li>Level 1</li>

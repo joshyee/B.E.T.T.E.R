@@ -11,6 +11,6 @@
         Register now and become a God of Elemental Titans!</p> 
     </div>
     <div class="right">
-        <asp:Image ID="titans" runat="server" ImageUrl="~/Resources/titans.png" Width="500px" />
+        <asp:Image ID="titans" runat="server" ImageUrl="~/Images/titans.png" Width="500px" />
     </div>
 </asp:Content>
