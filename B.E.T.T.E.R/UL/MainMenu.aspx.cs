@@ -13,6 +13,9 @@ namespace B.E.T.T.E.R.UL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // Display welcome message
+            lblUsername.Text = "Welcome back, " + (string)Session["user"];
+
             
         }
 

@@ -22,6 +22,7 @@ namespace B.E.T.T.E.R.UL
             if (txtUsername.Text == "test" && txtPwd.Text == "better3050")
             {
                 Session["user"] = Convert.ToString(txtUsername.Text);
+                Session["userId"] = 1;
                 Response.Redirect("MainMenu.aspx");
             }
             else

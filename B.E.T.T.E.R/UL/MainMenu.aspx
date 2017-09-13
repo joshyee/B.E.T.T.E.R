@@ -10,20 +10,5 @@
         <asp:Button ID="btnManagePoints" runat="server" Text="Manage Points" OnClick="btnManagePoints_Click" />
         <br />
     </div> 
-    <asp:GridView ID="MainMenuGridView" cssclass="TableGrid" GridLines="None" runat="server" AutoGenerateColumns="False" DataKeyNames="titanId" DataSourceID="SqlDataSource1">
-        <Columns>
-            <asp:BoundField DataField="titanName" HeaderText="Titan Name" SortExpression="titanName" />
-            <asp:BoundField DataField="experience" HeaderText="XP" SortExpression="experience" ReadOnly="true" />
-            <asp:BoundField DataField="creationDate" HeaderText="Date Created" SortExpression="creationDate" DataFormatString="{0:d}" ReadOnly="true" />
-            <asp:ImageField DataImageUrlField="imagePath" ReadOnly="true">
-                <ControlStyle CssClass="GridViewImage" />
-            </asp:ImageField>
-        </Columns>
-    </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:udbBetterConnectionString %>" SelectCommand="SELECT * FROM [tblTitan] WHERE ([userId] = @userId AND [active] = @active) ">
-    <SelectParameters>
-        <asp:SessionParameter Name="userId" SessionField="userId" Type="Int32" />
-        <asp:Parameter DefaultValue="true" Name="active" Type="Boolean" />
-    </SelectParameters>
-    </asp:SqlDataSource>
-</asp:Content>
+   
+    </asp:Content>
