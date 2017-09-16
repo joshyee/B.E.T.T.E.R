@@ -7,14 +7,13 @@ namespace B.E.T.T.E.R
 {
     public class Character
     {
-        public string titanName;
-        public int userId;
-        public int elementId;
-        public int experience;
-        public bool active;
-        public string imagePath;
-        public DateTime dateCreated;
-
+        public string titanName { get; set;}
+        public int userId { get; set; }
+        public int elementId { get; set; }
+        public int experience { get; set; }
+        public bool active { get; set; }
+        public string imagePath { get; set; }
+        public DateTime dateCreated { get; set; }
         public static int TotalCharacters;
     }
 }

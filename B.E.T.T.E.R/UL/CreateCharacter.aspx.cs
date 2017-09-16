@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Diagnostics;
 
 namespace B.E.T.T.E.R.UL
 {
@@ -16,6 +17,7 @@ namespace B.E.T.T.E.R.UL
 
         }
 
+       
         protected void fireTitan_Click(object sender, EventArgs e)
         {
             Character fireTitan = new Character();
@@ -30,6 +32,15 @@ namespace B.E.T.T.E.R.UL
 
             Character.TotalCharacters =+ 1;
 
+            Session["fireTitan"] = fireTitan;
+            Session["fireTitanName"] = fireTitan.titanName;
+            Session["fireTitanUserId"] = fireTitan.userId;
+            Session["fireTitanElementId"] = fireTitan.elementId;
+            Session["fireTitanExperience"] = fireTitan.experience;
+            Session["fireTitanActive"] = fireTitan.active;
+            Session["fireTitanImagePath"] = fireTitan.imagePath;
+            Session["fireTitanDateCreated"] = fireTitan.dateCreated;
+            
         }
 
         protected void airTitan_Click(object sender, EventArgs e)
@@ -45,6 +56,15 @@ namespace B.E.T.T.E.R.UL
             airTitan.dateCreated = DateTime.Today;
 
             Character.TotalCharacters = +1;
+
+            Session["airTitan"] = airTitan;
+            Session["airTitanName"] = airTitan.titanName;
+            Session["airTitanUserId"] = airTitan.userId;
+            Session["airTitanElementId"] = airTitan.elementId;
+            Session["airTitanExperience"] = airTitan.experience;
+            Session["airTitanActive"] = airTitan.active;
+            Session["airTitanImagePath"] = airTitan.imagePath;
+            Session["airTitanDateCreated"] = airTitan.dateCreated;
         }
 
         protected void earthTitan_Click(object sender, EventArgs e)
@@ -60,6 +80,15 @@ namespace B.E.T.T.E.R.UL
             earthTitan.dateCreated = DateTime.Today;
 
             Character.TotalCharacters = +1;
+
+            Session["earthTitan"] = earthTitan;
+            Session["earthTitanName"] = earthTitan.titanName;
+            Session["earthTitanUserId"] = earthTitan.userId;
+            Session["earthTitanElementId"] = earthTitan.elementId;
+            Session["earthTitanExperience"] = earthTitan.experience;
+            Session["earthTitanActive"] = earthTitan.active;
+            Session["earthTitanImagePath"] = earthTitan.imagePath;
+            Session["earthTitanDateCreated"] = earthTitan.dateCreated;
         }
 
         protected void waterTitan_Click(object sender, EventArgs e)
@@ -75,6 +104,15 @@ namespace B.E.T.T.E.R.UL
             waterTitan.dateCreated = DateTime.Today;
 
             Character.TotalCharacters = +1;
+
+            Session["waterTitan"] = waterTitan;
+            Session["waterTitanName"] = waterTitan.titanName;
+            Session["waterTitanUserId"] = waterTitan.userId;
+            Session["waterTitanElementId"] = waterTitan.elementId;
+            Session["waterTitanExperience"] = waterTitan.experience;
+            Session["waterTitanActive"] = waterTitan.active;
+            Session["waterTitanImagePath"] = waterTitan.imagePath;
+            Session["waterTitanDateCreated"] = waterTitan.dateCreated;
         }
     }
 }

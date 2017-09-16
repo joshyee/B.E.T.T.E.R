@@ -10,5 +10,24 @@
         <asp:Button ID="btnManagePoints" runat="server" Text="Manage Points" OnClick="btnManagePoints_Click" />
         <br />
     </div> 
-   
+    <div id="MyCharacters">
+        <asp:ObjectDataSource ID="odsCharacters" runat="server" TypeName="B.E.T.T.E.R.CharacterDataAccess" SelectMethod="getCharacters"></asp:ObjectDataSource>
+
+        <asp:ListView ID="lvCharacters" runat="server" DataSourceID="odsCharacters">
+            <LayoutTemplate>
+                <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
+            </LayoutTemplate>
+            <ItemTemplate>
+            
+                Titan Name: <%#Eval("titanName") %><br />
+                User ID: <%#Eval("userId") %><br />
+                Element ID: <%#Eval("elementId") %><br />
+                Experience: <%#Eval("experience") %><br />
+                Active: <%#Eval("active") %><br />
+                Image Path: <%#Eval("imagePath") %><br />
+                Date Created: <%#Eval("dateCreated") %><br />
+
+            </ItemTemplate>
+        </asp:ListView>
+    </div>
     </asp:Content>

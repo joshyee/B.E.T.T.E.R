@@ -176,6 +176,11 @@ input[type=submit] {
 }
 
 /* Main Menu page */
+#MyCharacters {
+    margin-top: 80px;
+
+}
+
 span#ContentPlaceHolder1_lblEmail {
     float: right;
 }
