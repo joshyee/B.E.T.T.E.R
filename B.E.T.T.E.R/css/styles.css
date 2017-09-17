@@ -178,7 +178,17 @@ input[type=submit] {
 /* Main Menu page */
 #MyCharacters {
     margin-top: 80px;
+}
 
+span#ContentPlaceHolder1_lblTitle {
+    font-weight: bold;
+}
+
+
+.character-list {
+    margin-top: 50px;
+    float: left;
+    width: 20%;
 }
 
 span#ContentPlaceHolder1_lblEmail {
@@ -219,6 +229,11 @@ table#ContentPlaceHolder1_MainMenuGridView td {
 
 .character {
     width: 250px;
+}
+
+.menu-character {
+    width: 250px;
+    margin-left: -50px;
 }
 
 .titanError {

@@ -10,30 +10,7 @@ namespace B.E.T.T.E.R
         public List<Character> getCharacters()
         {
             List<Character> characterList = new List<Character>();
-            /*
-            Character character1 = new Character();
-            character1.titanName = "Vulcan";
-            character1.userId = 1;
-            character1.elementId = 1;
-            character1.experience = 0;
-            character1.active = true;
-            character1.imagePath = "~/Images/fire.png";
-            character1.dateCreated = DateTime.Today;
-
-            characterList.Add(character1);
             
-            Character character2 = new Character();
-            character2.titanName = "Zeus";
-            character2.userId = 1;
-            character2.elementId = 2;
-            character2.experience = 0;
-            character2.active = true;
-            character2.imagePath = "~/Images/water.png";
-            character2.dateCreated = DateTime.Today;
-
-            characterList.Add(character2);
-            */
-
             if (HttpContext.Current.Session["fireTitan"] != null)
             { 
                 Character fireTitan = new Character();

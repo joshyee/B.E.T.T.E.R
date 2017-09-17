@@ -22,12 +22,13 @@ namespace B.E.T.T.E.R.UL
         {
             Character fireTitan = new Character();
 
-            fireTitan.titanName = "Fire Titan";
+            fireTitan.titanName = "Vulcan";
             fireTitan.userId = Convert.ToInt32(Session["userId"]);
             fireTitan.elementId = 1;
             fireTitan.experience = 0;
             fireTitan.active = true;
-            fireTitan.imagePath = "~/Images/fire.png";
+            fireTitan.imagePath = "http://localhost:14854/Images/fire.png";
+
             fireTitan.dateCreated = DateTime.Today;
 
             Character.TotalCharacters =+ 1;
@@ -47,12 +48,12 @@ namespace B.E.T.T.E.R.UL
         {
             Character airTitan = new Character();
 
-            airTitan.titanName = "Air Titan";
+            airTitan.titanName = "Aeolus";
             airTitan.userId = Convert.ToInt32(Session["userId"]);
             airTitan.elementId = 2;
             airTitan.experience = 0;
             airTitan.active = true;
-            airTitan.imagePath = "~/Images/air.png";
+            airTitan.imagePath = "http://localhost:14854/Images/air.png";
             airTitan.dateCreated = DateTime.Today;
 
             Character.TotalCharacters = +1;
@@ -71,12 +72,12 @@ namespace B.E.T.T.E.R.UL
         {
             Character earthTitan = new Character();
 
-            earthTitan.titanName = "Earth Titan";
+            earthTitan.titanName = "Gaia";
             earthTitan.userId = Convert.ToInt32(Session["userId"]);
             earthTitan.elementId = 3;
             earthTitan.experience = 0;
             earthTitan.active = true;
-            earthTitan.imagePath = "~/Images/earth.png";
+            earthTitan.imagePath = "http://localhost:14854/Images/earth.png";
             earthTitan.dateCreated = DateTime.Today;
 
             Character.TotalCharacters = +1;
@@ -95,12 +96,12 @@ namespace B.E.T.T.E.R.UL
         {
             Character waterTitan = new Character();
 
-            waterTitan.titanName = "Water Titan";
+            waterTitan.titanName = "Poseidon";
             waterTitan.userId = Convert.ToInt32(Session["userId"]);
             waterTitan.elementId = 4;
             waterTitan.experience = 0;
             waterTitan.active = true;
-            waterTitan.imagePath = "~/Images/water.png";
+            waterTitan.imagePath = "http://localhost:14854/Images/water.png";
             waterTitan.dateCreated = DateTime.Today;
 
             Character.TotalCharacters = +1;

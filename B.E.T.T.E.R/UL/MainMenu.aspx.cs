@@ -12,15 +12,39 @@ namespace B.E.T.T.E.R.UL
 {
     public partial class MainMenu : System.Web.UI.Page
     {
-        private void LoadCharacters()
+        public string getElement(int element)
         {
-           
+           if (element == 1)
+            {
+                return "Fire";
+            }
+           else if (element == 2)
+            {
+                return "Air";
+            }
+            else if (element == 3)
+            {
+                return "Earth";
+            }
+            else if (element == 4)
+            {
+                return "Water";
+            }
+            return "Error";
         }
 
         protected void Page_Load(object sender, EventArgs e)
         {
             // Display welcome message
             lblUsername.Text = "Welcome back, " + (string)Session["user"];
+            
+            /* Display title header
+            if (HttpContext.Current.Session["fireTitan"] != null)
+            {
+                lblTitle.Text = "My Characters";
+            }
+            */
+           
         }
 
         protected void btnManagePoints_Click(object sender, EventArgs e)
