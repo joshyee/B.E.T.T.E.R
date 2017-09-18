@@ -37,14 +37,9 @@ namespace B.E.T.T.E.R.UL
         {
             // Display welcome message
             lblUsername.Text = "Welcome back, " + (string)Session["user"];
-            
-            /* Display title header
-            if (HttpContext.Current.Session["fireTitan"] != null)
-            {
-                lblTitle.Text = "My Characters";
-            }
-            */
-           
+
+            // Display XP
+            lblXP.Text = Convert.ToString(Session["experience"]);
         }
 
         protected void btnManagePoints_Click(object sender, EventArgs e)

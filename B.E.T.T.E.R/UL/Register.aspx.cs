@@ -27,6 +27,8 @@ namespace B.E.T.T.E.R.UL
                 {
                     // Start new session and redirect user to main menu
                     Session["user"] = txtUsername.Text;
+                    Session["userId"] = 1;
+                    Session["experience"] = 0;
                     Response.Redirect("MainMenu.aspx");
                 }
                 catch (Exception ex)

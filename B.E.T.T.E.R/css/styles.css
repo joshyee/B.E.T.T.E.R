@@ -189,6 +189,11 @@ span#ContentPlaceHolder1_lblTitle {
     margin-top: 50px;
     float: left;
     width: 20%;
+    text-align: center;
+}
+
+.label {
+    font-weight: bold;
 }
 
 span#ContentPlaceHolder1_lblEmail {
@@ -199,6 +204,10 @@ span#ContentPlaceHolder1_lblEmail {
     float: right;
     margin-top: 75px;
     text-align: center;
+}
+
+input#ContentPlaceHolder1_btnManagePoints {
+    margin-top: 20px;
 }
 
 input[class="mediumBtn"] {
@@ -233,7 +242,6 @@ table#ContentPlaceHolder1_MainMenuGridView td {
 
 .menu-character {
     width: 250px;
-    margin-left: -50px;
 }
 
 .titanError {

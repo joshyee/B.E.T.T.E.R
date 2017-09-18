@@ -23,6 +23,7 @@ namespace B.E.T.T.E.R.UL
             {
                 Session["user"] = Convert.ToString(txtUsername.Text);
                 Session["userId"] = 1;
+                Session["experience"] = 0;
                 Response.Redirect("MainMenu.aspx");
             }
             else
