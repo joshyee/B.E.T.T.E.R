@@ -19,8 +19,6 @@
             <li><a href="CreateCharacter.aspx">Create Character</a></li>
             <li><a href="ManageCharacters.aspx">Manage Characters</a></li>
             <li><a href="HallOfFame.aspx">Hall of Fame</a></li>
-            <li><a href="UploadExercise.aspx">Upload Exercise</a></li>
-            <li><a href="ManagePoints.aspx">Manage Points</a></li>
             <li><a href="Logout.aspx">Logout</a></li>
         </ul>
     </nav>

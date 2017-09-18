@@ -40,15 +40,6 @@ namespace B.E.T.T.E.R.UL {
         protected global::System.Web.UI.WebControls.Label lblXP;
         
         /// <summary>
-        /// btnManagePoints control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnManagePoints;
-        
-        /// <summary>
         /// odsCharacters control.
         /// </summary>
         /// <remarks>

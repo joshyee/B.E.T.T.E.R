@@ -70,5 +70,77 @@ namespace B.E.T.T.E.R
             return characterList;
 
         }
+
+        public List<Character> getHOFCharacters()
+        {
+            var today = DateTime.Today;
+            var month = new DateTime(today.Year, today.Month, 1);
+            var first = month.AddMonths(-1);
+            var last = month.AddDays(-1);
+
+            List<Character> HOFcharacterList = new List<Character>();
+            
+            Character fireTitan = new Character();
+            fireTitan.titanName = "Hephaestus";
+            fireTitan.userId = 3;
+            fireTitan.elementId = 1;
+            fireTitan.experience = 11501;
+            fireTitan.active = false;
+            fireTitan.imagePath = "http://localhost:14854/Images/fire.png";
+            fireTitan.dateCreated = last;
+            fireTitan.wins = 17;
+            fireTitan.losses = 6;
+
+            HOFcharacterList.Add(fireTitan);
+            
+
+           
+            Character airTitan = new Character();
+            airTitan.titanName = "Anemoi";
+            airTitan.userId = 4;
+            airTitan.elementId = 2;
+            airTitan.experience = 11501;
+            airTitan.active = false;
+            airTitan.imagePath = "http://localhost:14854/Images/air.png";
+            airTitan.dateCreated = last;
+            airTitan.wins = 19;
+            airTitan.losses = 4;
+
+            HOFcharacterList.Add(airTitan);
+            
+
+            
+            Character earthTitan = new Character();
+            earthTitan.titanName = "Terra";
+            earthTitan.userId = 4;
+            earthTitan.elementId = 3;
+            earthTitan.experience = 11501;
+            earthTitan.active = false;
+            earthTitan.imagePath = "http://localhost:14854/Images/earth.png";
+            earthTitan.dateCreated = last;
+            earthTitan.wins = 14;
+            earthTitan.losses = 12;
+
+            HOFcharacterList.Add(earthTitan);
+            
+
+           
+            Character waterTitan = new Character();
+            waterTitan.titanName = "Neptune";
+            waterTitan.userId = 5;
+            waterTitan.elementId = 4;
+            waterTitan.experience = 11501;
+            waterTitan.active = false;
+            waterTitan.imagePath = "http://localhost:14854/Images/water.png";
+            waterTitan.dateCreated = last;
+            waterTitan.wins = 20;
+            waterTitan.losses = 10;
+
+            HOFcharacterList.Add(waterTitan);
+            
+
+            return HOFcharacterList;
+
+        }
     }
 }

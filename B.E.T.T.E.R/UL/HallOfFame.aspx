@@ -3,23 +3,27 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Hall of Fame</h1>
-    <div class="col-group">
-        <asp:GridView ID="HallOfFameGridView" cssclass="TableGrid" GridLines="None" runat="server" DataSourceID="SqlDataSource1" AutoGenerateColumns="False">
-            <Columns>
-                <asp:BoundField DataField="Titan Name" HeaderText="Titan Name" SortExpression="Titan Name" />
-                <asp:BoundField DataField="Username" HeaderText="Username" ReadOnly="True" SortExpression="Username" />
-                <asp:BoundField DataField="Date Created" HeaderText="Date Created" ReadOnly="True" SortExpression="Date Created" DataFormatString="{0:d}" />
-                <asp:ImageField DataImageUrlField="imagePath">
-                    <ControlStyle CssClass="GridViewImage" />
-                </asp:ImageField>
-            </Columns>
-        </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:udbBetterConnectionString %>" SelectCommand="SELECT tblTitan.titanName AS 'Titan Name', MAX(tblUser.username) AS 'Username', MAX(tblTitan.creationDate) AS 'Date Created', tblTitan.imagePath
-FROM tblTitan
-INNER JOIN tblUser
-ON tblTitan.userId = tblUser.userId
-WHERE tblTitan.experience = 11500
-GROUP BY tblTitan.titanName, imagePath
-ORDER BY MAX(tblTitan.creationDate);"></asp:SqlDataSource>
+    <div class="col-group">    
+        <asp:ObjectDataSource ID="odsCharacters" runat="server" TypeName="B.E.T.T.E.R.CharacterDataAccess" SelectMethod="getHOFCharacters"></asp:ObjectDataSource>
+        <asp:ListView ID="lvCharacters" runat="server" DataSourceID="odsCharacters">
+            <LayoutTemplate>
+                <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
+            </LayoutTemplate>
+            <ItemTemplate>
+                <div class="character-list">
+                    <img class='character' src='<%#Eval("imagePath") %>' /><br />
+                    <asp:Label ID="lblTitanName" CssClass="label" runat="server" Text="Titan Name"></asp:Label><br /> 
+                        <%#Eval("titanName") %><br /><br />
+                    <asp:Label ID="lblElement" CssClass="label" runat="server" Text="Element"></asp:Label><br /> 
+                        <asp:Label ID="element" runat="server" Text='<%#getElement(Convert.ToInt32(Eval("elementId")))%>'></asp:Label><br /><br />
+                    <asp:Label ID="lblWins" CssClass="label" runat="server" Text="Wins"></asp:Label><br />
+                        <%#Eval("wins") %><br /><br />
+                    <asp:Label ID="lblLosses" CssClass="label" runat="server" Text="Losses"></asp:Label><br />
+                        <%#Eval("losses") %><br /><br />
+                    <asp:Label ID="lblDateCreated" CssClass="label" runat="server" Text="Date Created"></asp:Label><br />
+                        <%#Eval("dateCreated") %><br /><br />
+                </div>
+            </ItemTemplate>
+        </asp:ListView>
     </div>
 </asp:Content>

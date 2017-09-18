@@ -8,7 +8,6 @@
         <h2>My Points Balance</h2>
         <h3><asp:Label ID="lblExercisePoints" runat="server" Text="Exercise Points"></asp:Label></h3>
         <asp:Label ID="lblXP" runat="server"></asp:Label>
-        <asp:Button ID="btnManagePoints" runat="server" Text="Manage Points" OnClick="btnManagePoints_Click" />
         <br />
     </div> 
     <div id="MyCharacters">

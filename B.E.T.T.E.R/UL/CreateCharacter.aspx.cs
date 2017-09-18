@@ -28,10 +28,9 @@ namespace B.E.T.T.E.R.UL
             fireTitan.experience = 0;
             fireTitan.active = true;
             fireTitan.imagePath = "http://localhost:14854/Images/fire.png";
-
+            fireTitan.wins = 0;
+            fireTitan.losses = 0;
             fireTitan.dateCreated = DateTime.Today;
-
-            Character.TotalCharacters =+ 1;
 
             Session["fireTitan"] = fireTitan;
             Session["fireTitanName"] = fireTitan.titanName;
@@ -54,9 +53,9 @@ namespace B.E.T.T.E.R.UL
             airTitan.experience = 0;
             airTitan.active = true;
             airTitan.imagePath = "http://localhost:14854/Images/air.png";
+            airTitan.wins = 0;
+            airTitan.losses = 0;
             airTitan.dateCreated = DateTime.Today;
-
-            Character.TotalCharacters = +1;
 
             Session["airTitan"] = airTitan;
             Session["airTitanName"] = airTitan.titanName;
@@ -78,10 +77,10 @@ namespace B.E.T.T.E.R.UL
             earthTitan.experience = 0;
             earthTitan.active = true;
             earthTitan.imagePath = "http://localhost:14854/Images/earth.png";
+            earthTitan.wins = 0;
+            earthTitan.losses = 0;
             earthTitan.dateCreated = DateTime.Today;
-
-            Character.TotalCharacters = +1;
-
+            
             Session["earthTitan"] = earthTitan;
             Session["earthTitanName"] = earthTitan.titanName;
             Session["earthTitanUserId"] = earthTitan.userId;
@@ -102,10 +101,10 @@ namespace B.E.T.T.E.R.UL
             waterTitan.experience = 0;
             waterTitan.active = true;
             waterTitan.imagePath = "http://localhost:14854/Images/water.png";
+            waterTitan.wins = 0;
+            waterTitan.losses = 0;
             waterTitan.dateCreated = DateTime.Today;
-
-            Character.TotalCharacters = +1;
-
+            
             Session["waterTitan"] = waterTitan;
             Session["waterTitanName"] = waterTitan.titanName;
             Session["waterTitanUserId"] = waterTitan.userId;

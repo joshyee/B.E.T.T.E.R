@@ -14,6 +14,7 @@ namespace B.E.T.T.E.R
         public bool active { get; set; }
         public string imagePath { get; set; }
         public DateTime dateCreated { get; set; }
-        public static int TotalCharacters;
+        public int wins { get; set; }
+        public int losses { get; set; }
     }
 }

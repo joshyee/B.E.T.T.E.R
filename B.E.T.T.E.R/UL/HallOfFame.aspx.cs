@@ -11,6 +11,27 @@ namespace B.E.T.T.E.R.UL
 {
     public partial class HallOfFame : System.Web.UI.Page
     {
+        public string getElement(int element)
+        {
+            if (element == 1)
+            {
+                return "Fire";
+            }
+            else if (element == 2)
+            {
+                return "Air";
+            }
+            else if (element == 3)
+            {
+                return "Earth";
+            }
+            else if (element == 4)
+            {
+                return "Water";
+            }
+            return "Error";
+        }
+        
         protected void Page_Load(object sender, EventArgs e)
         {
 
